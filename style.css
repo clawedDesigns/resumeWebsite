@@ -1,0 +1,2520 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald|Work+Sans&display=swap');
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: consolas;
+}
+
+.header
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 250px;
+	background: url("./img/BG.png") no-repeat;
+	background-size: 2000px 200px;
+	background-position: -200px 0;
+	background-color: #0f294c;
+	z-index: 2;
+	transition: 0.5s;
+}
+
+.header-minimized
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 140px;
+	background: url("./img/BG.png") no-repeat;
+	background-size: 600px 60px;
+	background-position: 300px 0;
+	background-color: #0f294c;
+	z-index: 2;
+	transition: 0.5s;
+}
+
+.navbar
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80px;
+	background: #101e34;
+	top: 170px;
+	z-index: 2;
+	border-bottom: 5px solid #fff;
+	transition: 0.5s;
+}
+
+.header-minimized .navbar
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80px;
+	background: #101e34;
+	top: 60px;
+	z-index: 2;
+	border-bottom: 5px solid #fff;
+	transition: 0.5s;
+}
+
+.container
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 75%;
+	height: 60px;
+	top: 180px;
+	left: 20%;
+	transition: 0.5s;
+	text-align: right;
+}
+
+.header-minimized .navbar .container
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 75%;
+	height: 60px;
+	top: 70px;
+	left: 20%;
+	transition: 0.5s;
+	text-align: right;
+}
+
+.menuBtn
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	top: 185px;
+	right: 20px;
+	background: none;
+	line-height: 50px;
+	font-size: 40px;
+	color: #fff;
+	display: none;
+	transition: 0.5s;
+}
+
+.header-minimized .navbar .menuBtn
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	top: 75px;
+	right: 20px;
+	background: none;
+	line-height: 50px;
+	font-size: 40px;
+	color: #fff;
+	display: none;
+	transition: 0.5s;
+}
+
+.menuBtn:hover
+{
+	color: #db4a3c;
+	font-size: 50px;
+}
+
+.headerPhoto
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 180px;
+	height: 180px;
+	background: #fff;
+	top: 120px;
+	left: 20px;
+	z-index: 3;
+	transition: 0.5s;
+}
+
+.header-minimized .headerPhoto
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	top: 20px;
+	left: 20px;
+	z-index: 3;
+	transition: 0.5s;
+}
+
+.headerPhoto img 
+{
+	position: fixed;
+	margin: 5px;
+	padding: 0;
+	width: 170px;
+	height: 170px;
+	top: 120px;
+	transition: 0.5s;
+}
+
+.header-minimized .headerPhoto img
+{
+	position: fixed;
+	margin: 5px;
+	padding: 0;
+	width: 90px;
+	height: 90px;
+	top: 20px;
+	transition: 0.5s;
+}
+
+.branding
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	top: 10px;
+	left: 20px;
+	width: 400px;
+	height: 100px;
+	transition: 0.5s;
+}
+
+.header-minimized .branding
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	top: 10px;
+	left: 140px;
+	width: 400px;
+	height: 70px;
+	transition: 0.5s;
+}
+
+.branding h1
+{
+	font-family:  'Work Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.header-minimized .branding h1
+{
+	font-family: 'Work Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	line-height: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.branding h1 span
+{
+	font-family: 'Oswald', sans-serif;
+	margin-right: -10px;
+	padding: 0;
+	font-size: 32px;
+	color: #db4a3c;
+	transition: 0.5s;
+}
+
+.header-minimized .branding h1 span
+{
+	font-family: 'Oswald', sans-serif;
+	margin-right: -5px;
+	padding: 0;
+	font-size: 17px;
+	color: #db4a3c;
+	transition: 0.5s;
+}
+
+.branding p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 15px;
+	color: #fff;
+	transition: 0.5s;
+}	
+
+a 
+{
+	position: relative;
+	background: #fff;
+	width: 200px;
+	height: 50px;
+	text-decoration: none;
+}
+
+.btnNavBar
+{
+	display: inline-block;
+	background: #101e34;
+	border: 3px solid #fff;
+	color: #fff;
+	width: 22%;
+	margin: 0 2px;
+	transition: 0.5s;
+}
+
+.btnContainer
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.btnNavBar .btnContainer .icon
+{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+	color: #101e34;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.btnNavBar .btnContainer .icon::before
+{
+	content: '';
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background: #fff;
+	left: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.btnNavBar .btnContainer .label
+{
+	position: absolute;
+	height: 50px;
+	width: 150px;
+	left: 60px;
+	line-height: 50px;
+	font-size: 20px;
+	z-index: 1;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	transition: 0.5s;
+	text-align: left;
+}
+
+.btnNavBar.selected, .btnNavBar:hover
+{
+	border-color: #db4a3c;
+}
+
+.btnNavBar.selected .btnContainer .icon::before, .btnNavBar:hover > .btnContainer .icon::before
+{
+	width: 250px;
+	background: #db4a3c;
+}
+
+.btnNavBar.selected .btnContainer .label, .btnNavBar:hover > .btnContainer .label
+{
+	font-weight: bold;
+	color: #fff;
+}
+
+.btnNavBar.selected .btnContainer .icon, .btnNavBar:hover > .btnContainer .icon
+{
+	font-size: 40px;
+	color: #fff;
+}
+
+.navMenu
+{
+	position: fixed;
+	z-index: 3;
+	background: #db4a3c;
+	width: 100%;
+	height: 100%;
+	transform: translateX(100%);
+	transition: 0.5s;
+}
+
+.navMenu-expanded
+{
+	position: fixed;
+	z-index: 3;
+	background: #db4a3c;
+	width: 100%;
+	height: 100%;
+	transform: translateX(0);
+	transition: 0.5s;
+}
+
+.btnNavMenu
+{
+	display: block;
+	width: 400px;
+	height: 80px;
+	margin: 20px auto;
+	background: #fff;
+	border: 3px solid #fff;
+	border-radius: 40px;
+	transition: 0.5s;
+}
+
+.btnNavMenu .btnContainer
+{
+	border-radius: 40px;
+}
+
+.btnNavMenu .btnContainer .icon
+{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.btnNavMenu .btnContainer .icon::before
+{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 70px;
+	height: 70px;
+	margin: 5px;
+	background: #db4a3c;
+	border-radius: 50%;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.btnNavMenu .btnContainer .label
+{
+	position: absolute;
+	width: 300px;
+	height: 80px;
+	line-height: 80px;
+	left: 90px;
+	font-size: 30px;
+	color: #db4a3c;
+	z-index: 1;
+	transition: 0.5s;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+.btnNavMenu.selected .btnContainer .icon::before, .btnNavMenu:hover > .btnContainer .icon::before
+{
+	transform: scale(15);
+}
+
+.btnNavMenu.selected, .btnNavMenu:hover
+{
+	border-color: #fff;
+}
+
+.btnNavMenu.selected .btnContainer .icon, .btnNavMenu:hover > .btnContainer .icon
+{
+	font-size: 40px;
+}
+
+.btnNavMenu.selected .btnContainer .label, .btnNavMenu:hover > .btnContainer .label
+{
+	font-weight: bold;
+	color: #fff;
+}
+
+.section
+{
+	position: relative;
+	height: 1200px;
+	width: 100%;
+}
+
+.section.home
+{
+	height: 750px;
+}
+
+.section.aboutMe
+{
+	height: 1800px;
+}
+
+#mySkills.section
+{
+	height: 3800px;
+}
+
+#eduXP.section
+{
+	height: 3400px;
+}
+
+#contactMe.section
+{
+	height: 1500px;
+	overflow: hidden;
+}
+
+.knownTechContainer
+{
+	position: relative;
+	top: 350px;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.topSoftSkillsContainer
+{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+	background: #0f294c;
+	top: 400px;
+}
+
+.timelineContainer
+{
+	position: relative;
+	width: 100%;
+	height: 3000px;
+	top: 300px;
+	overflow: hidden;
+}
+
+.contactMeContainer
+{
+	position: relative;
+	top: 275px;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+
+.section.type01
+{
+	background: #dcdcdc;
+}
+
+.section.type02
+{
+	background: #fff;
+}
+
+.mainHeading
+{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	font-family: consolas;
+	top: 250px;
+}
+
+.mainHeading .icon
+{
+	position: relative;
+	top: 100px;
+	font-size: 50px;
+	color: #fff;
+	line-height: 90px;
+	width: 80px;
+	height: 80px;
+	background: #000;
+	margin: 0 auto;
+	transform: rotate(45deg);
+	z-index: 1;
+	opacity: 0;
+	transition: 1s;
+}
+
+.section.type01 .mainHeading .icon
+{
+	color: #dcdcdc;
+	background: #101e34;
+}
+
+.section.type02 .mainHeading .icon
+{
+	color: #fff;
+	background: #db4a3c;
+}
+
+.mainHeading[data-scroll = "in"] > .icon
+{
+	opacity: 1;
+}
+
+.mainHeading .icon #icon
+{
+	transform: rotate(-45deg);
+}
+
+.mainHeading:after
+{
+	position: absolute;
+	content: '';
+	top: 138px;
+	left: 25%;
+	width: 50%;
+	height: 4px;
+	background: #000;
+	z-index: 0;
+	transition: 0.5s;
+	transition-delay: 1s;
+	transform: scaleX(0);
+}
+
+.section.type01 .mainHeading:after, .section.type01 .subHeading .icon:before, .section.type01 .subHeading .icon:after
+{
+	background: #101e34;
+}
+
+.section.type02 .mainHeading:after, .section.type02 .subHeading .icon:before, .section.type02 .subHeading .icon:after
+{
+	background: #db4a3c;
+}
+
+.section.type01 .subHeading.alt .icon:before, .section.type01 .subHeading.alt .icon:after, .section.type02 .subHeading.alt .icon:before, .section.type02 .subHeading.alt .icon:after
+{
+	background: #fff;
+}
+
+.mainHeading[data-scroll = "in"]:after
+{
+	transform: scaleX(1);
+}
+
+.mainHeading h2
+{
+	position: relative;
+	top: -100px;
+	font-size: 50px;
+	text-transform: uppercase;
+	opacity: 0;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+
+.mainHeading[data-scroll = "in"] > h2
+{
+	opacity: 1;
+}
+
+.welcomeText
+{
+	position: relative;
+	width: 80%;
+	height: 200px;
+	top: 275px;
+	left: 10%;
+	opacity: 0;
+	text-align: center;
+	transition: 1s;
+	transition-delay: 1s;
+}
+
+.section.type01 .welcomeText, .section.type01 .subHeading .icon, .section.type01 .mainHeading h2, .section.type01 .subHeading h2
+{
+	color: #101e34;
+}
+
+.section.type02 .welcomeText, .section.type02 .subHeading .icon, .section.type02 .mainHeading h2, .section.type02 .subHeading h2
+{
+	color: #db4a3c;
+}
+
+.section.type01 .subHeading.alt .icon,.section.type01 .subHeading.alt h2, .section.type02 .subHeading.alt .icon, .section.type02 .subHeading.alt h2
+{
+	color: #fff;
+}
+
+.welcomeText[data-scroll = "in"]
+{
+	opacity: 1;
+}
+
+.subHeading
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#personalInfo.subHeading
+{
+	top: 350px;
+}
+
+#topSkillsInfo.subHeading
+{
+	top: 300px;
+}
+
+#otherSkillsInfo.subHeading
+{
+	top: 25px;
+}
+
+#knownTechInfo.subHeading, #languageInfoHeader.subHeading, #topSoftSkills.subHeading, #minorSoftSkills.subHeading, #referenceHeader.subHeading
+{
+	top: 50px;
+}
+
+.subHeading .icon
+{
+	position: relative;
+	top: 20px;
+	font-size: 40px;
+	opacity: 0;
+	transition: 1s;
+}
+
+.subHeading[data-scroll = "in"] > .icon
+{
+	opacity: 1;
+}
+
+.subHeading .icon:before
+{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height: 3px;
+	background: #000;
+	top: 30px;
+	right: -25%;
+	transform: scaleX(0);
+	transition: 1s;
+}
+
+.subHeading .icon:after
+{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height: 3px;
+	background: #000;
+	top: 30px;
+	left: -25%;
+	transform: scaleX(0);
+	transition: 1s;
+}
+
+.subHeading[data-scroll = "in"] > .icon:after, .subHeading[data-scroll = "in"] .icon:before
+{
+	transform: scaleX(1);
+}
+
+.subHeading h2
+{
+	font-size: 20px;
+	text-transform: uppercase;
+	position: relative;
+	top: 5px;
+	opacity: 0;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+
+.subHeading[data-scroll = "in"] > h2
+{
+	opacity: 1;
+}
+
+#aboutMe .container
+{
+	position: relative;
+	width: 80%;
+	height: 320px;
+	top: 350px;
+	left: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#aboutMe .container div
+{
+	flex: 30%;
+}
+
+#aboutMe .container .textSection
+{
+	width: 30%;
+	height: 300px;
+	margin: 5px;
+	opacity: 0;
+	transition: 1s;
+	transition-delay: 1s;
+}
+
+#aboutMe .container .textSection[data-scroll = "in"]
+{
+	opacity: 1;
+}
+
+#aboutMe .container .photoSection
+{
+	width: 200px;
+	height: 200px;
+	background: #db4a3c;
+	margin: 5px auto;
+	border: 4px solid #db4a3c;
+	border-radius: 50%;
+	transform: scale(0.1);
+	transition: 0.5s;
+	transition-delay: 1s;
+	opacity: 0;
+}
+
+#aboutMe .container .photoSection[data-scroll = "in"]
+{
+	background: url("./img/photo2.jpg") no-repeat;
+	background-size: 200px 200px;
+	background-position: 0 0;
+	transform: scale(1);
+	opacity: 1;
+}
+
+.languageInfoContainer
+{
+	background: #db4a3c;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	top: 400px;
+	overflow: hidden;
+}
+
+.languageContainer
+{
+	position: relative;
+	width: 90%;
+	left: 5%;
+	height: 350px;
+	top: 75px;
+}
+
+.topSkillsContainer
+{
+	position: relative;
+	width: 90%;
+	left: 5%;
+	height: 350px;
+	top: 300px;
+	overflow: hidden;
+}
+
+.topSoftSkillsContainer
+{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+}
+
+.minorSoftSkillContainer
+{
+	position: relative;
+	height: 700px;
+	width: 100%;
+	top: 400px;
+	overflow: hidden;
+}
+
+.minorSoftSkillTable
+{
+	position: relative;
+	top: 100px;
+	left: 20%;
+	width: 60%;
+	height: 480px;
+	margin: 0;
+}
+
+.minorSoftSkillTable .row
+{
+	position: relative;
+	height: 100px;
+	width: 100%;
+	margin: 10px 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.minorSoftSkillTable .row.alt .minorSoftSkillBox
+{
+	background: none;
+	color: #101e34;
+	transform: translateX(500px);
+	transition: 2s;
+	opacity: 0;
+	border-radius: 30px;
+}
+
+.minorSoftSkillTable .row .minorSoftSkillBox
+{
+	display: inline-block;
+	position: relative;
+	width: 80%;
+	left: 10%;
+	height: 100px;
+	overflow: hidden;
+	background: #101e34;
+	color: #fff;
+	transform: translateX(-500px);
+	transition: 2s;
+	opacity: 0;
+	border-radius: 30px;
+}
+
+.minorSoftSkillTable[data-scroll = "in"] > .row .minorSoftSkillBox, .minorSoftSkillTable[data-scroll = "in"] > .row.alt .minorSoftSkillBox
+{
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.minorSoftSkillBox h3
+{
+	font-size: 25px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.languageItems, .topSkillsItems, .topSoftSkillItems
+{
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+	width: 60%;
+	left: 10%;
+	height: 100%;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transform: translateX(300px);
+	opacity: 0;
+	transition: 1s;
+}
+
+.topSoftSkillItems
+{
+	top: 75px;
+	height: 500px;
+}
+
+.languageContainer[data-scroll = "in"] > .languageItems, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems
+{
+	transform: translateX(0);
+	opacity: 1;
+}
+
+
+.languageBox
+{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	margin: 0;
+	border-bottom: 1.5px solid #fff;
+	overflow: hidden;
+}
+
+.skillBarBox
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	border-bottom: 1.5px solid #101e34;
+	overflow: hidden;
+}
+
+.topSoftSkillItems .skillBarBox
+{
+	border-color: #fff;
+}
+
+.languageBox h3
+{
+	position: relative;
+	top: 0px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.skillBarBox h3
+{
+	position: relative;
+	top: -15px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #101e34;
+	text-transform: uppercase;
+}
+
+.topSoftSkillItems .skillBarBox h3
+{
+	color: #fff;
+}
+
+.languageBox .languageBar
+{
+	position: relative;
+	top: -10px;
+	background: #db4a3c;
+	border: 3px solid #fff;
+	border-radius: 20px;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	transition: 1s;
+	transition-delay: 1s;
+}
+
+.skillBarBox .skillBar
+{
+	position: relative;
+	top: -30px;
+	background: #dcdcdc;
+	border: 3px solid #101e34;
+	border-radius: 20px;
+	width: 15px;
+	height: 15px;
+	overflow: hidden;
+	transition: 1s;
+	transition-delay: 1s;
+}
+
+.topSoftSkillItems .skillBarBox .skillBar
+{
+	border-color: #fff;
+	background: #0f294c;
+}
+
+.languageContainer[data-scroll = "in"] > .languageItems .languageBox .languageBar, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox .skillBar, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox .skillBar
+{
+	width: 90%;
+}
+
+.languageBox p 
+{
+	position: absolute;
+	right: 10%;
+	top: 110px;
+	color: #fff;
+	width: 50%;
+	height: 30px;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 20px;
+	opacity: 0;
+	transition: 1s;
+	transition-delay: 2s;
+}
+
+.skillBarBox p
+{
+	position: absolute;
+	right: 10%;
+	top: 45px;
+	color: #101e34;
+	width: 50%;
+	height: 30px;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 15px;
+	opacity: 0;
+	transition: 1s;
+	transition-delay: 2s;
+	
+}
+
+.topSoftSkillItems .skillBarBox p
+{
+	color: #fff;
+}
+
+.languageContainer[data-scroll = "in"] > .languageItems .languageBox p, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox p, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox p
+{
+	opacity: 1;
+}
+
+.languageBox .languageBar .languageRating, .skillBarBox .skillBar .skillRating
+{
+	width: 100%;
+	height: 18px;
+	background: #fff;
+	border-radius: 30px;
+	margin: 1px;
+	transform-origin: left;
+	transform: scaleX(0);
+	transition: 1s;
+	transition-delay: 2s;
+}
+
+.skillBarBox .skillBar .skillRating
+{
+	height: 13px;
+	border-radius: 13px;
+	background: #db4a3c;
+}
+
+.languageContainer[data-scroll = "in"] > .languageItems .languageBox .languageBar .languageRating.pro, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox .skillBar .skillRating.pro, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox .skillBar .skillRating.pro
+{
+	transform: scaleX(1);
+}
+
+.languageContainer[data-scroll = "in"] > .languageItems .languageBox .languageBar .languageRating.expert, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox .skillBar .skillRating.expert, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox .skillBar .skillRating.expert
+{
+	transform: scaleX(0.75);
+}
+
+.languageContainer[data-scroll = "in"] > .languageItems .languageBox .languageBar .languageRating.advanced, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox .skillBar .skillRating.advanced, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox .skillBar .skillRating.advanced
+{
+	transform: scaleX(0.5);
+}
+
+.languageContainer[data-scroll = "in"] > .languageItems .languageBox .languageBar .languageRating.beginner, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox .skillBar .skillRating.beginner, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox .skillBar .skillRating.beginner
+{
+	transform: scaleX(0.25);
+}
+
+
+
+.languageInfo, .topSkillsInfo, .topSoftSkillsInfo
+{
+	position: relative;
+	width: 250px;
+	height: 100%;
+	float: right;
+	background: #101e34;
+	border-radius: 30px;
+	transition: 1s;
+	transition-delay: 1s;
+	opacity: 0;
+	transform: translateY(-200px);
+}
+
+.topSkillsInfo, .topSoftSkillsInfo
+{
+	height: 350px;
+}
+
+.topSoftSkillsInfo
+{
+	top: 100px;
+	right: 5%;
+}
+
+.languageContainer[data-scroll = "in"] > .languageInfo, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo
+{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.languageInfo h2, .topSkillsInfo h2, .topSoftSkillsInfo h2
+{
+	font-family: consolas;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.languageInfo .infoUnderLine, .topSkillsInfo .infoUnderLine, .topSoftSkillsInfo .infoUnderLine
+{
+	position: absolute;
+	top: 65px;
+	width: 70%;
+	margin: 0 auto;
+	background: #fff;
+	left: 15%;
+	height: 3px;
+}
+
+.languageInfo .infoContainer, .topSkillsInfo .infoContainer, .topSoftSkillsInfo .infoContainer
+{
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	top: 80px;
+	height: 250px;
+	opacity: 0;
+	transition: 1s;
+	transition-delay: 1s;
+}
+
+.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer
+{
+	opacity: 1;
+}
+
+.infoContainer .infoBox
+{
+	width: 100%;
+	height: 62.5px;
+	position: relative;
+	overflow: hidden;
+	opacity: 0;
+	transition: 1s;
+	transition-delay: 2s;
+}
+
+.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer .infoBox, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer .infoBox, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer .infoBox
+{
+	opacity: 1;
+}
+
+.infoBox h3
+{
+	position: absolute;
+	top: -20px;
+	height: 25px;
+	width: 80%;
+	left: 10%;
+	line-height: 25px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.infoRatingBar
+{
+	position: absolute;
+	width: 90%;
+	height: 10px;
+	left: 5%;
+	top: 30px;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.infoRatingBar .infoRating
+{
+	width: 99%;
+	height: 8px;
+	margin: 1px;
+	transform-origin: left;
+	transform: scaleX(0);
+	background: #db4a3c;
+	transition: 1s;
+	transition-delay: 2s;
+}
+
+.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer .infoBox .infoRatingBar .infoRating.pro, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.pro, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.pro
+{
+	transform: scaleX(1);
+}
+
+.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer .infoBox .infoRatingBar .infoRating.beginner, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.beginner, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.beginner
+{
+	transform: scaleX(0.25);
+}
+
+.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer .infoBox .infoRatingBar .infoRating.advanced, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.advanced, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.advanced
+{
+	transform: scaleX(0.5);
+}
+
+.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer .infoBox .infoRatingBar .infoRating.expert, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.expert, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.expert
+{
+	transform: scaleX(0.75);
+}
+
+.textSection.textHalf
+{
+	transform: translateY(35%);
+}
+
+.textSection.textFull
+{
+	display: none;
+	transform: translateY(25%);
+}
+
+.textSection .textLine
+{
+	background: #fff;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 10px;
+}
+
+.textLine p
+{
+	margin: 0px;
+	display: inline;
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.textLine .left
+{
+	margin-left: 5px;
+	float: left;
+}
+
+.textLine .right
+{
+	margin-right: 5px;
+}
+
+.textLine.type01
+{
+	color: #fff;
+	background: #db4a3c;
+}
+
+.textLine.type02
+{
+	color: #db4a3c;
+	background: #fff;
+}
+
+.minorSkillContainer
+{
+	width: 100%;
+	height: 500px;
+	background: #0f294c;
+	position: relative;
+	top: 350px;
+	transition: 0.5s;
+}
+
+.minorSkillContainer-extended
+{
+	width: 100%;
+	height: 800px;
+	background: #0f294c;
+	position: relative;
+	top: 350px;
+	transition: 0.5s;
+}
+
+
+.minorSkillContainer .container, .minorSkillContainer-extended .container
+{
+	position: absolute;
+	top: 200px;
+	left: 0;
+	height: 600px;
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+}
+
+.container .skillBox
+{
+	position: relative;
+	height: 50px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #101e34;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+	transition: 0.5s;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.container .skillBox:hover
+{
+	height: 375px;
+	background: #fff;
+}
+
+.container .skillBox .icon
+{
+	position: absolute;
+	text-align: center;
+	height: 50px;
+	top: 0px;
+	left: -15%;
+	width: 100%;
+	line-height: 50px;
+	font-size: 25px;
+	transition: 0.5s;
+	color: #fff;
+}
+
+.container .skillBox:hover > .icon
+{
+	top: 10px;
+	left: 0;
+	font-size: 100px;
+	color: #db4a3c;
+}
+
+.container .skillBox .heading
+{
+	position: absolute;
+	height: 25px;
+	top: 0px;
+	left: 0%;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	font-size: 15px;
+	transition: 0.5s;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
+
+.container .skillBox .heading h2
+{
+	margin: 0 auto;
+}
+
+.container .skillBox:hover > .heading
+{
+	top: 110px;
+	font-size: 25px;
+	color: #db4a3c;
+}
+
+.container .skillBox .skillList
+{
+	position: relative;
+	top: 250px;
+	width: 300px;
+	height: 80px;
+	opacity: 0;
+	transition: 0.5s;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.container .skillBox:hover .skillList
+{
+	top: 175px;
+	height: 200px;
+	opacity: 1;
+	transition: 1s;
+}
+
+.skillName
+{
+	position: relative;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: consolas;
+	font-weight: bold;
+	transition: 0.25s;
+	opacity: 0;
+}
+
+.skillName.type01
+{
+	background: #db4a3c;
+	border-radius: 12.5px;
+	color: #fff;
+}
+
+.skillName.type02
+{
+	background: #fff;
+	color: #db4a3c;
+}
+
+.skillBox:hover > .skillList .skillName
+{
+	opacity: 1;
+	transition: 1s;
+}
+
+.knownTechContainer .knownTechItems
+{
+	position: absolute;
+	top: 200px;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.knownTechItems .knownTechBtns
+{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 20px 50px;
+	overflow: hidden;
+	transition: 0.5s;
+	border: 3px solid #fff;
+	background: #fff;
+	border-radius: 100px;
+	transform: scale(1);
+}
+
+.knownTechItems .knownTechBtns:hover
+{
+	border: 3px solid #fff;
+	background: #fff;
+	transform: scale(2);
+	margin: 50px 75px;
+}
+
+.knownTechBtns img 
+{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	transition: 0.5s;
+	transform: scale(1) translateY(0);
+}
+
+.knownTechBtns h3
+{
+	position: absolute;
+	top: 40px;
+	font-size: 10px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: .25s;
+	color: #101e34;
+	text-transform: uppercase;
+}
+
+.knownTechBtns h3 span
+{
+	color: #101e34;
+	font-size: 6px;
+}
+
+.knownTechBtns h3 span.level
+{
+	color: #db4a3c;
+	font-size: 15px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.knownTechItems .knownTechBtns:hover > img
+{
+	border-color: #fff;
+	transform: scale(.5) translateY(-50px);
+}
+
+.knownTechItems .knownTechBtns:hover > h3
+{
+	opacity: 1;
+	transition: 1s;
+}
+
+.timelineContainer .timeLineStart, .timelineContainer .timeLineEnd
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	font-size: 50px;
+	margin: 0 auto;
+	color: #dcdcdc;
+	background: #dcdcdc;
+	transition: 1s;
+}
+
+.timelineContainer .timeLineEnd
+{
+	transition-delay: 2s;
+}
+
+.timelineContainer[data-scroll = "in"] > .timeLineMainLine
+{
+	transform: scaleY(1);
+}
+
+.timelineContainer[data-scroll = "in"] > .timeLineStart
+{
+	color: #fff;
+	transform: rotate(180deg);
+}
+
+.timelineContainer[data-scroll = "in"] > .timeLineEnd
+{
+	color: #fff;
+}
+
+.timeLineMainLine
+{
+	width: 100%;
+	height: 2600px;
+	position: relative;
+	transform: scaleY(0);
+	transition: 1s;
+	transition-delay: 1s;
+	transform-origin: top;
+}
+
+.timeLineMainLine .line
+{
+	width: 5px;
+	height: 100%;
+	background: #dcdcdc;
+	margin: 0 auto;
+}
+
+.timeLineItem
+{
+	width: 90%;
+	left: 5%;
+	height: 200px;
+	top: 100px;
+	position: absolute;
+	margin: 20px 0;
+}
+
+.timeLineItem[data-scroll = "in"] > .timeStamp
+{
+	opacity: 1;
+	transform: translateX(0);
+}
+
+#primarySchool.timeLineItem
+{
+	top: 100px;
+}
+
+#highSchool01.timeLineItem
+{
+	top: 400px;
+}
+
+#highSchool02.timeLineItem
+{
+	top: 700px;
+}
+
+#work01.timeLineItem
+{
+	top: 1000px;
+}
+
+#university.timeLineItem
+{
+	top: 1300px;
+}
+
+#work02.timeLineItem
+{
+	top: 1600px;
+}
+
+#work03.timeLineItem
+{
+	top: 1900px;
+}
+
+#work04.timeLineItem
+{
+	top: 2200px;
+}
+
+.timeLineInfo
+{
+	width: 40%;
+	height: 200px;
+	margin: 0;
+	display: inline-block;
+	position: relative;
+	opacity: 0;
+	transition: 1s;
+}
+
+.timeLineItem[data-scroll = "in"] > .timeLineInfo
+{
+	transform: translateX(0);
+	opacity: 1;
+	
+}
+
+.timeLineInfo h2 
+{
+	color: #101e34;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+#primarySchool.timeLineItem .timeLineInfo, #university.timeLineItem .timeLineInfo
+{
+	margin-top: 37.5px;
+}
+
+#highSchool01.timeLineItem h2 
+{
+	margin-top: 75px;
+}
+
+.timeLineInfo h3
+{
+	color: #db4a3c;
+	font-size: 20px;
+	margin-top: -20px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.timeLineInfo p 
+{
+	color: #101e34;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: -20px;
+}
+
+.timeLineInfo.edu
+{
+	float: right;
+	right: 55%;
+	text-align: right;
+	transform: translateX(-500px);
+}
+
+.timeLineInfo.exp
+{
+	float: left;
+	left: 55%;
+	text-align: left;
+	transform: translateX(500px);
+}
+
+.timeStamp
+{
+	width: 110px;
+	height: 50px;
+	background: #101e34;
+	line-height: 50px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	transition: 1s;
+	opacity: 0;
+}
+
+.timeStamp:before
+{
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: #101e34;
+	transform: rotate(45deg);
+	z-index: -1;
+}
+
+.timeStamp.edu
+{
+	float: left;
+	left: 55%;
+	top: 75px;
+	transform: translateX(500px);
+}
+
+.timeStamp.edu:before
+{
+	left: -10px;
+	top: 10px;
+}
+
+.timeStamp.exp 
+{
+	float: right;
+	right: 55%;
+	top: 75px;
+	transform: translateX(-500px);
+}
+
+.timeStamp.exp:before
+{
+	right: -10px;
+	top: 10px;
+}
+
+.contactMeInfo
+{
+	position: absolute;
+	top: 30px;
+	width: 40%;
+	left: 30%;
+	height: 275px;
+	transition: 0.5s;
+}
+
+.contactMeInfo[data-scroll = "in"] > .contactInfoItem
+{
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.contactMeInfo .contactInfoItem
+{
+	background: #101e34;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	margin: 0;
+	border-radius: 25px;
+	transform: translateX(200px);
+	opacity: 0;
+	transition: 1s;
+	transition-delay: 1s;
+}
+
+.contactInfoItem.alt
+{
+	background: none;
+	transform: translateX(-200px);
+}
+
+.contactInfoItem.alt .icon, .contactInfoItem.alt p
+{
+	color: #101e34;
+}
+
+.contactInfoItem .icon, .contactInfoItem p 
+{
+	color: #fff;
+	display: inline-block;
+	font-size: 25px;
+	width: 20%;
+	margin: 0 5%;
+	height: 50px;
+	font-family: 'Oswald', sans-serif;
+	transition: 0.5s;
+}
+
+.contactInfoItem .icon
+{
+	text-align: center;
+	font-size: 30px;
+}
+
+.contactInfoItem p 
+{
+	width: 60%;
+	text-align: left;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.socialMediaContainer
+{
+	background: #101e34;
+	width: 100%;
+	height: 250px;
+	position: relative;
+	transition: 0.5s;
+}
+
+.socialMediaItems
+{
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	height: 100px;
+	display: flex;
+	
+}
+
+.socialMediaBtns
+{
+	position: relative;
+	width: 80px;
+	height: 80px;
+	margin: 20px auto;
+	background: #fff;
+	color: #101e34;
+	text-align: center;
+	line-height: 80px;
+	font-size: 40px;
+	border-radius: 50%;
+	transform: scale(1);
+	transition: 0.5s;
+}
+
+.refSocialMedia .socialMediaBtns
+{
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.socialMediaBtns:hover
+{
+	transform: scale(1.5);
+	font-size: 50px;
+	color: #fff;
+}
+
+.refSocialMedia .socialMediaBtns:hover
+{
+	font-size: 30px;
+}
+
+#linkedInBtn.socialMediaBtns:hover
+{
+	background: #007bb6;
+}
+
+#instagramBtn.socialMediaBtns:hover
+{
+	background: linear-gradient(#5d00c4,#c30054,#df7f00);
+}
+
+#githubBtn.socialMediaBtns:hover
+{
+	background: #8d9092;
+}
+
+#deviantArtBtn.socialMediaBtns:hover
+{
+	background: #b6d100;
+}
+
+#redditBtn.socialMediaBtns:hover
+{
+	background: #fd4300;
+}
+
+.refItems
+{
+	height: 350px;
+	width: 90%;
+	position: relative;
+	top: 50px;
+	left: 5%;
+	display: flex;
+	flex: 50%;
+	align-items: center;
+	justify-content: center;
+}
+
+.reference[data-scroll = "in"]
+{
+	opacity: 1;
+}
+
+.reference 
+{
+	width: 50%;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+	opacity: 0;
+	transition: 1s;
+}
+
+.reference h2 
+{
+	width: 80%;
+	position: relative;
+	left: 10%;
+	text-transform: uppercase;
+	font-family:  'Work Sans', sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-weight: bold;
+	transform: translateX(200px);
+	opacity: 0;
+	transition: 1s;
+}
+
+.reference[data-scroll = "in"] > h2
+{
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.reference h2 span
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+	line-height: 25px;
+	color: #db4a3c;
+}
+
+.reference h3
+{
+	width: 80%;
+	position: relative;
+	left: 10%;
+	top: -20px;
+	color: #101e34;
+	font-size: 15px;
+	opacity: 0;
+	transition: 1s;
+	transition-delay: 1s;
+}
+
+.reference[data-scroll = "in"] > h3, .reference[data-scroll = "in"] > .referenceContacts
+{
+	opacity: 1;
+}
+
+.reference .referenceContacts
+{
+	width: 80%;
+	position: relative;
+	left: 15%;
+	top: -20px;
+	height: 100px;
+	color: #101e34;
+	opacity: 0;
+	transition: 1s;
+	transition-delay: 1s;
+}
+
+
+.refContactRow
+{
+	width: 100%;
+	position: relative;
+	height: 40px;
+	margin: 0;
+	line-height: 30px;
+}
+
+.refContactRow .icon
+{
+	display: inline-block;
+	width: 20%;
+	position: relative;
+	left:-10%;
+	height: 30px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.refContactRow p 
+{
+	display: inline-block;
+	width: 70%;
+	position: relative;
+	left: -10%;
+	height: 30px;
+	text-align: left;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 1300px)
+{
+	.knownTechContainer
+	{
+		height: 800px;
+	}
+	
+	.contactMeInfo
+	{
+		width: 50%;
+		left: 25%;
+	}
+	
+	.contactInfoItem p 
+	{
+		font-size: 20px;
+	}
+	
+	.contactInfoItem .icon
+	{
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 1000px)
+{
+	.header
+	{
+		background-position: -300px 0;
+	}
+	
+	.container
+	{
+		left: 25%;
+		width: 70%;
+	}
+	
+	.btnNavBar .btnContainer .label
+	{
+		font-size: 15px;
+	}
+	
+	#mySkills.section
+	{
+		height: 4000px;
+	}
+	
+	.textLine p
+	{
+		font-size: 12px;
+	}
+	
+	.languageItems, .topSkillsItems
+	{
+		width: 60%;
+		left: 0;
+	}
+	
+	.topSoftSkillItems
+	{
+		width: 50%;
+		left: 5%;
+	}
+	
+	.knownTechContainer
+	{
+		height: 900px;
+	}
+	
+	.minorSoftSkillBox h3 
+	{
+		font-size: 20px;
+	}
+	
+	.timeLineInfo p
+	{
+		font-size: 13px;
+	}
+	
+	.contactMeInfo
+	{
+		width: 60%;
+		left: 20%;
+	}
+}
+
+@media only screen and (max-width: 800px)
+{
+	.header
+	{
+		background-position: -450px 0;
+	}
+	
+	.header-minimized
+	{
+		background-position: 200px 0;
+	}
+	
+	.container
+	{
+		left: 35%;
+		width: 60%;
+	}
+	
+	.btnNavBar
+	{
+		width: 50px;
+	}
+	
+	.textSection.textFull
+	{
+		display: block;
+	}
+	
+	.textSection.textHalf
+	{
+		display: none;
+	}
+	
+	.minorSoftSkillTable
+	{
+		width: 80%;
+		left: 10%;
+	}
+	
+	.timeLineInfo h2
+	{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 700px)
+{
+	.minorSkillContainer
+	{
+		top: 600px;
+	}
+	
+	.container .skillBox .icon
+	{
+		left: -30%;
+	}
+	
+	.languageItems
+	{
+		width: 50%;
+	}
+	
+	.languageBox p 
+	{
+		font-size: 15px;
+	}
+	
+	.section#mySkills
+	{
+		height: 4200px;
+	}
+	
+	.knownTechContainer
+	{
+		top: 600px;
+		height: 1200px;
+	}
+	
+	.topSoftSkillItems
+	{
+		width: 45%;
+		left: 5%;
+	}
+	
+	.minorSoftSkillTable
+	{
+		width: 80%;
+		left: 10%;
+	}
+	
+	.contactMeInfo
+	{
+		width: 70%;
+		left: 15%;
+	}
+	
+	.reference 
+	{
+		width: 80%;
+	}
+	
+	.refItems
+	{
+		flex: 100%;
+		flex-direction: column;
+		top: 100px;
+	}
+	
+	#contactMe.section
+	{
+		height: 1700px;
+	}
+}
+
+@media only screen and (max-width: 600px)
+{
+	.header
+	{
+		background-position: -700px 0;
+	}
+	
+	.header-minimized
+	{
+		background-position: 0 0;
+	}
+	
+	.navbar .container 
+	{
+		display: none;
+	}
+
+	.menuBtn, .header-minimized .navbar .menuBtn
+	{
+		display: inline-block;
+	}
+	
+	#aboutMe .container div
+	{
+		flex: 100%;
+	}
+
+	#aboutMe .container .photoContainer
+	{
+		height: 175px;
+	}
+	
+	.pageDivider[data-scroll = "in"] > .icon:after
+	{
+		transform: scaleX(.75);
+	}
+
+	.section.aboutMe
+	{
+		height: 2400px;
+	}
+	
+	.section#mySkills
+	{
+		height: 5500px;
+	}
+	
+	.languageInfoContainer
+	{
+		top: 550px;
+		height: 1100px;
+	}
+	
+	.topSkillsContainer
+	{
+		top: 350px;
+		height: 1100px;
+	}
+	
+	.topSoftSkillsContainer
+	{
+		height: 1200px;
+	}
+	
+	.languageInfo, .topSkillsInfo
+	{
+		float: none;
+		margin: 0 auto;
+	}
+	
+	.topSoftSkillsInfo
+	{
+		float: none;
+		margin: 0 auto;
+		right: unset;
+	}
+	
+	.languageItems, .topSkillsItems
+	{
+		float: none;
+		margin: 0 auto;
+		width: 80%;
+		left: 10%;
+	}
+	
+	.topSoftSkillItems
+	{
+		top: 150px;
+		float: none;
+		margin: 0 auto;
+		left: 0%;
+		width: 80%;
+	}
+	
+	.topSkillsItems
+	{
+		top: -300px;
+	}
+	
+	.minorSkillContainer
+	{
+		top: 100px;
+	}
+	
+	.knownTechContainer
+	{
+		top: 100px;
+		height: 1200px;
+	}
+	
+	.minorSoftSkillBox h3 
+	{
+		font-size: 18px;
+	}
+	
+	.mainHeading h2
+	{
+		font-size: 35px;
+	}
+	
+	.timeLineInfo p
+	{
+		font-size: 12px;
+	}
+	
+	.contactMeInfo
+	{
+		width: 80%;
+		left: 10%;
+	}
+	
+	.contactInfoItem p 
+	{
+		font-size: 15px;
+	}
+	
+	.contactInfoItem .icon
+	{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 500px)
+{
+	.knownTechContainer
+	{
+		height: 1300px;
+	}
+	
+	.minorSoftSkillTable
+	{
+		width: 90%;
+		left: 5%;
+	}
+	
+	.minorSoftSkillBox h3 
+	{
+		font-size: 15px;
+	}
+	
+	#work01.timeLineItem, #work02.timeLineItem, #work03.timeLineItem, #work04.timeLineItem
+	{
+		height: 400px;
+	}
+	
+	.socialMediaItems
+	{
+		flex: 100%;
+		flex-direction: column;
+	}
+	
+	.socialMediaContainer
+	{
+		height: 600px;
+	}
+	
+	#contactMe.section
+	{
+		height: 2000px;
+	}
+}
+@media only screen and (max-width: 400px)
+{
+	
+	.section#mySkills
+	{
+		height: 6300px;
+	}
+	
+	.knownTechContainer
+	{
+		height: 2100px;
+	}
+	
+	.mainHeading h2
+	{
+		font-size: 30px;
+	}
+	
+	.contactMeInfo
+	{
+		width: 90%;
+		left: 5%;
+	}
+	
+	.refContactRow p
+	{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 360px)
+{
+	.branding h1, .header-minimized .branding h1
+	{
+		margin-left: -10px;
+		font-size: 25px;
+	}
+	
+	.branding h1 span, .header-minimized .branding h1 span
+	{
+		margin-right: 1px;
+		font-size: 20px;
+	}
+	
+	.branding p, .header-minimized .branding p
+	{
+		margin-left: -10px;
+		font-size: 13px;
+	}
+	
+	.container .skillBox .icon
+	{
+		left: -35%;
+	}
+	.languageBox p 
+	{
+		font-size: 12px;
+	}
+	
+	.minorSoftSkillBox h3 
+	{
+		font-size: 13px;
+	}
+	
+	.contactInfoItem p 
+	{
+		font-size: 12px;
+	}
+	
+	.contactInfoItem .icon
+	{
+		font-size: 15px;
+	}
+}
