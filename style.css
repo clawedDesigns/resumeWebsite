@@ -509,7 +509,7 @@ a
 {
 	position: relative;
 	width: 100%;
-	height: 3000px;
+	height: 3400px;
 	top: 300px;
 	overflow: hidden;
 }
@@ -644,6 +644,7 @@ a
 	text-align: center;
 	transition: 1s;
 	transition-delay: 1s;
+	font-size: 15px;
 }
 
 .section.type01 .welcomeText, .section.type01 .subHeading .icon, .section.type01 .mainHeading h2, .section.type01 .subHeading h2
@@ -871,7 +872,7 @@ a
 .minorSoftSkillTable .row
 {
 	position: relative;
-	height: 100px;
+	height: 60px;
 	width: 100%;
 	margin: 10px 0;
 	font-family: 'Oswald', sans-serif;
@@ -891,9 +892,9 @@ a
 {
 	display: inline-block;
 	position: relative;
-	width: 80%;
-	left: 10%;
-	height: 100px;
+	width: 90%;
+	left: 5%;
+	height: 60px;
 	overflow: hidden;
 	background: #101e34;
 	color: #fff;
@@ -913,7 +914,7 @@ a
 {
 	font-size: 25px;
 	text-align: center;
-	line-height: 50px;
+	line-height: 30px;
 }
 
 .languageItems, .topSkillsItems, .topSoftSkillItems
@@ -2370,7 +2371,7 @@ a
 	
 	.knownTechContainer
 	{
-		top: 100px;
+		top: 350px;
 		height: 1200px;
 	}
 	
@@ -2407,6 +2408,22 @@ a
 }
 @media only screen and (max-width: 500px)
 {
+	.section.home
+	{
+		height: 800px;
+	}
+	
+	#personalInfo.subHeading
+	{
+		top: 400px;
+	}
+	
+	#aboutMe .container
+	{
+		top: 450px;
+		height: 420px;
+	}
+	
 	.knownTechContainer
 	{
 		height: 1300px;
@@ -2443,9 +2460,61 @@ a
 	{
 		height: 2000px;
 	}
+	
+	#work03.timeLineItem
+	{
+		top: 2000px;
+	}
+	
+	#work04.timeLineItem
+	{
+		top: 2400px;
+	}
+	
+	.timeLineMainLine
+	{
+		height: 2800px;
+	}
+	
+	#eduXP.section
+	{
+		height: 3600px;
+	}
 }
 @media only screen and (max-width: 400px)
 {
+	.section.home
+	{
+		height: 850px;
+	}
+	
+	.section.aboutMe
+	{
+		height: 2600px;
+	}
+	
+	.branding h1, .header-minimized .branding h1
+	{
+		margin-left: -10px;
+		font-size: 20px;
+	}
+	
+	.branding h1 span, .header-minimized .branding h1 span
+	{
+		margin-right: 1px;
+		font-size: 15px;
+	}
+	
+	#personalInfo.subHeading
+	{
+		top: 500px;
+	}
+	
+	#aboutMe .container
+	{
+		top: 550px;
+		height: 500px;
+	}
 	
 	.section#mySkills
 	{
@@ -2476,16 +2545,21 @@ a
 
 @media only screen and (max-width: 360px)
 {
+	.section.home
+	{
+		height: 900px;
+	}
+	
 	.branding h1, .header-minimized .branding h1
 	{
 		margin-left: -10px;
-		font-size: 25px;
+		font-size: 20px;
 	}
 	
 	.branding h1 span, .header-minimized .branding h1 span
 	{
 		margin-right: 1px;
-		font-size: 20px;
+		font-size: 15px;
 	}
 	
 	.branding p, .header-minimized .branding p
@@ -2516,5 +2590,37 @@ a
 	.contactInfoItem .icon
 	{
 		font-size: 15px;
+	}
+	
+	#personalInfo.subHeading
+	{
+		top: 550px;
+	}
+	
+	#aboutMe .container
+	{
+		top: 600px;
+		height: 600px;
+	}
+	
+	
+	#work03.timeLineItem
+	{
+		top: 2100px;
+	}
+	
+	#work04.timeLineItem
+	{
+		top: 2500px;
+	}
+	
+	.timeLineMainLine
+	{
+		height: 2950px;
+	}
+	
+	#eduXP.section
+	{
+		height: 3700px;
 	}
 }
