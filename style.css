@@ -8,7 +8,7 @@ body
 	font-family: consolas;
 }
 
-.header
+.header, .header-minimized
 {
 	position: fixed;
 	margin: 0;
@@ -25,17 +25,101 @@ body
 
 .header-minimized
 {
+	height: 140px;
+	background-size: 600px 60px;
+	background-position: 300px 0;
+}
+
+.branding
+{
 	position: fixed;
 	margin: 0;
 	padding: 0;
-	width: 100%;
-	height: 140px;
-	background: url("./img/BG.png") no-repeat;
-	background-size: 600px 60px;
-	background-position: 300px 0;
-	background-color: #0f294c;
-	z-index: 2;
+	top: 10px;
+	left: 20px;
+	width: 400px;
+	height: 100px;
 	transition: 0.5s;
+	transform: scale(1);
+}
+
+.header-minimized .branding
+{
+	top: 0;
+	left: 80px;
+	transform: scale(.75);
+}
+
+.branding h1
+{
+	font-family:  'Work Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.branding h1 span
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 33px;
+	color: #db4a3c;
+	transition: 0.5s;
+}
+
+.branding p
+{
+	position: relative;
+	top: -5px;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.headerPhoto
+{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 180px;
+	height: 180px;
+	background: #fff;
+	top: 120px;
+	left: 20px;
+	z-index: 3;
+	transition: 0.5s;
+}
+
+.header-minimized .headerPhoto
+{
+	width: 100px;
+	height: 100px;
+	top: 20px;
+	left: 20px;
+}
+
+.headerPhoto img 
+{
+	position: fixed;
+	margin: 5px;
+	padding: 0;
+	width: 170px;
+	height: 170px;
+	top: 120px;
+	transition: 0.5s;
+}
+
+.header-minimized .headerPhoto img
+{
+	width: 90px;
+	height: 90px;
+	top: 20px;
 }
 
 .navbar
@@ -54,19 +138,10 @@ body
 
 .header-minimized .navbar
 {
-	position: fixed;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 80px;
-	background: #101e34;
 	top: 60px;
-	z-index: 2;
-	border-bottom: 5px solid #fff;
-	transition: 0.5s;
 }
 
-.container
+.navbar .container
 {
 	position: fixed;
 	margin: 0;
@@ -81,15 +156,7 @@ body
 
 .header-minimized .navbar .container
 {
-	position: fixed;
-	margin: 0;
-	padding: 0;
-	width: 75%;
-	height: 60px;
 	top: 70px;
-	left: 20%;
-	transition: 0.5s;
-	text-align: right;
 }
 
 .menuBtn
@@ -111,19 +178,7 @@ body
 
 .header-minimized .navbar .menuBtn
 {
-	position: fixed;
-	margin: 0;
-	padding: 0;
-	width: 50px;
-	height: 50px;
 	top: 75px;
-	right: 20px;
-	background: none;
-	line-height: 50px;
-	font-size: 40px;
-	color: #fff;
-	display: none;
-	transition: 0.5s;
 }
 
 .menuBtn:hover
@@ -131,133 +186,6 @@ body
 	color: #db4a3c;
 	font-size: 50px;
 }
-
-.headerPhoto
-{
-	position: fixed;
-	margin: 0;
-	padding: 0;
-	width: 180px;
-	height: 180px;
-	background: #fff;
-	top: 120px;
-	left: 20px;
-	z-index: 3;
-	transition: 0.5s;
-}
-
-.header-minimized .headerPhoto
-{
-	position: fixed;
-	margin: 0;
-	padding: 0;
-	width: 100px;
-	height: 100px;
-	background: #fff;
-	top: 20px;
-	left: 20px;
-	z-index: 3;
-	transition: 0.5s;
-}
-
-.headerPhoto img 
-{
-	position: fixed;
-	margin: 5px;
-	padding: 0;
-	width: 170px;
-	height: 170px;
-	top: 120px;
-	transition: 0.5s;
-}
-
-.header-minimized .headerPhoto img
-{
-	position: fixed;
-	margin: 5px;
-	padding: 0;
-	width: 90px;
-	height: 90px;
-	top: 20px;
-	transition: 0.5s;
-}
-
-.branding
-{
-	position: fixed;
-	margin: 0;
-	padding: 0;
-	top: 10px;
-	left: 20px;
-	width: 400px;
-	height: 100px;
-	transition: 0.5s;
-}
-
-.header-minimized .branding
-{
-	position: fixed;
-	margin: 0;
-	padding: 0;
-	top: 10px;
-	left: 140px;
-	width: 400px;
-	height: 70px;
-	transition: 0.5s;
-}
-
-.branding h1
-{
-	font-family:  'Work Sans', sans-serif;
-	margin: 0;
-	padding: 0;
-	font-size: 40px;
-	color: #fff;
-	text-transform: uppercase;
-	transition: 0.5s;
-}
-
-.header-minimized .branding h1
-{
-	font-family: 'Work Sans', sans-serif;
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-	line-height: 20px;
-	color: #fff;
-	text-transform: uppercase;
-	transition: 0.5s;
-}
-
-.branding h1 span
-{
-	font-family: 'Oswald', sans-serif;
-	margin-right: -10px;
-	padding: 0;
-	font-size: 32px;
-	color: #db4a3c;
-	transition: 0.5s;
-}
-
-.header-minimized .branding h1 span
-{
-	font-family: 'Oswald', sans-serif;
-	margin-right: -5px;
-	padding: 0;
-	font-size: 17px;
-	color: #db4a3c;
-	transition: 0.5s;
-}
-
-.branding p
-{
-	margin: 0;
-	padding: 0;
-	font-weight: bold;
-	font-size: 15px;
-	color: #fff;
-	transition: 0.5s;
-}	
 
 a 
 {
@@ -271,83 +199,87 @@ a
 .btnNavBar
 {
 	display: inline-block;
+	position: relative;
 	background: #101e34;
 	border: 3px solid #fff;
 	color: #fff;
-	width: 22%;
-	margin: 0 2px;
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
 	transition: 0.5s;
-}
-
-.btnContainer
-{
-	position: relative;
-	width: 100%;
-	height: 100%;
+	line-height: 50px;
 	overflow: hidden;
 }
 
-.btnNavBar .btnContainer .icon
+.btnNavBar .icon
 {
-	position: absolute;
+	position: relative;
+	margin: 0;
+	padding: 0;
 	height: 50px;
 	width: 50px;
-	line-height: 50px;
+	top: 0;
 	text-align: center;
 	font-size: 30px;
 	color: #101e34;
 	z-index: 1;
 	transition: 0.5s;
+	background: red;
 }
 
-.btnNavBar .btnContainer .icon::before
+.btnNavBar .icon:before
 {
-	content: '';
 	position: absolute;
+	content: '';
 	height: 50px;
 	width: 50px;
-	background: #fff;
 	left: 0;
+	top: 0;
+	background: #fff;
 	z-index: -1;
 	transition: 0.5s;
+	transform-origin: left;
+	transform: scale(1);
 }
 
-.btnNavBar .btnContainer .label
+.btnNavBar h3
 {
 	position: absolute;
-	height: 50px;
-	width: 150px;
-	left: 60px;
-	line-height: 50px;
-	font-size: 20px;
-	z-index: 1;
 	font-family: 'Oswald', sans-serif;
-	text-transform: uppercase;
-	transition: 0.5s;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	width: 140px;
+	top: 0;
+	left: 60px;
+	color: #fff;
 	text-align: left;
+	text-transform: uppercase;
+	z-index: 1;
+	transition: 0.5s;
 }
 
-.btnNavBar.selected, .btnNavBar:hover
+.btnNavBar:hover
 {
 	border-color: #db4a3c;
 }
 
-.btnNavBar.selected .btnContainer .icon::before, .btnNavBar:hover > .btnContainer .icon::before
+.btnNavBar:hover > .icon::before
 {
-	width: 250px;
+	transform: scaleX(5);
 	background: #db4a3c;
 }
 
-.btnNavBar.selected .btnContainer .label, .btnNavBar:hover > .btnContainer .label
+.btnNavBar:hover > .label, .btnNavBar:hover > .icon
 {
 	font-weight: bold;
 	color: #fff;
 }
 
-.btnNavBar.selected .btnContainer .icon, .btnNavBar:hover > .btnContainer .icon
+.btnNavBar:hover >.icon
 {
 	font-size: 40px;
-	color: #fff;
 }
 
 .navMenu
@@ -372,24 +304,34 @@ a
 	transition: 0.5s;
 }
 
+.navMenu .container, .navMenu-expanded .container
+{
+	position: relative;
+	width: 100%;
+	height: 90%;
+	top: 5%;
+	display: flex;
+	flex: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
 .btnNavMenu
 {
-	display: block;
-	width: 400px;
+	position: relative;
+	width: 90%;
 	height: 80px;
-	margin: 20px auto;
+	margin: 10px auto;
 	background: #fff;
 	border: 3px solid #fff;
 	border-radius: 40px;
 	transition: 0.5s;
+	overflow: hidden;
 }
 
-.btnNavMenu .btnContainer
-{
-	border-radius: 40px;
-}
-
-.btnNavMenu .btnContainer .icon
+.btnNavMenu .icon
 {
 	position: absolute;
 	width: 80px;
@@ -397,56 +339,62 @@ a
 	line-height: 80px;
 	font-size: 40px;
 	text-align: center;
-	color: #fff;
-	z-index: 1;
-	transition: 0.5s;
-}
-
-.btnNavMenu .btnContainer .icon::before
-{
-	content: '';
-	position: absolute;
 	left: 0;
-	width: 70px;
-	height: 70px;
-	margin: 5px;
-	background: #db4a3c;
+	top: 0;
+	z-index: 1;
+	transition: 0.5s;
+	color: #fff;
+}
+
+.btnNavMenu .icon:before
+{
+	position: absolute;
+	content: '';
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
+	background: #db4a3c;
+	left:0;
+	top: 0;
 	z-index: -1;
+	transform: scale(1);
 	transition: 0.5s;
 }
 
-.btnNavMenu .btnContainer .label
+.btnNavMenu h3
 {
 	position: absolute;
-	width: 300px;
-	height: 80px;
-	line-height: 80px;
-	left: 90px;
-	font-size: 30px;
-	color: #db4a3c;
-	z-index: 1;
-	transition: 0.5s;
 	font-family: 'Oswald', sans-serif;
+	width: 70%;
+	left: 90px;
+	height: 100%;
+	line-height: 80px;
+	margin: 0;
+	font-size: 30px;
+	top: 0;
+	color: #db4a3c;
+	transition: 0.5s;
+	z-index: 1;
 	text-transform: uppercase;
 }
 
-.btnNavMenu.selected .btnContainer .icon::before, .btnNavMenu:hover > .btnContainer .icon::before
+.btnNavMenu:hover > .icon:before
 {
 	transform: scale(15);
 }
 
-.btnNavMenu.selected, .btnNavMenu:hover
+.btnNavMenu:hover
 {
 	border-color: #fff;
+
 }
 
-.btnNavMenu.selected .btnContainer .icon, .btnNavMenu:hover > .btnContainer .icon
+.btnNavMenu:hover > .icon
 {
 	font-size: 40px;
 }
 
-.btnNavMenu.selected .btnContainer .label, .btnNavMenu:hover > .btnContainer .label
+.btnNavMenu:hover > h3
 {
 	font-weight: bold;
 	color: #fff;
@@ -457,21 +405,33 @@ a
 	position: relative;
 	height: 1200px;
 	width: 100%;
+	overflow: hidden;
+	transition: 0.5s;
 }
 
-.section.home
+.section.type01
+{
+	background: #dcdcdc;
+}
+
+.section.type02
+{
+	background: #fff;
+}
+
+#home.section
 {
 	height: 750px;
 }
 
-.section.aboutMe
+#aboutMe.section
 {
-	height: 1800px;
+	height: 2100px;
 }
 
 #mySkills.section
 {
-	height: 3800px;
+	height: 4350px;
 }
 
 #eduXP.section
@@ -485,53 +445,30 @@ a
 	overflow: hidden;
 }
 
-.knownTechContainer
-{
-	position: relative;
-	top: 350px;
-	width: 100%;
-	height: 600px;
-	overflow: hidden;
-	transition: 0.5s;
-}
-
-.topSoftSkillsContainer
+.subSection
 {
 	position: relative;
 	width: 100%;
 	height: 800px;
-	overflow: hidden;
-	background: #0f294c;
+}
+
+#languageInfo.subSection
+{
 	top: 400px;
+	height: 700px;
 }
 
-.timelineContainer
+#minorTechSkillSection.subSection
 {
-	position: relative;
-	width: 100%;
-	height: 3400px;
-	top: 300px;
-	overflow: hidden;
+	top: 400px;
+	height: 900px;
 }
 
-.contactMeContainer
+#topSoftSkillsInfo.subSection
 {
-	position: relative;
-	top: 275px;
-	width: 100%;
-	height: 600px;
-	overflow: hidden;
+	top: 350px;
 }
 
-.section.type01
-{
-	background: #dcdcdc;
-}
-
-.section.type02
-{
-	background: #fff;
-}
 
 .mainHeading
 {
@@ -587,8 +524,8 @@ a
 	position: absolute;
 	content: '';
 	top: 138px;
-	left: 25%;
-	width: 50%;
+	left: 20%;
+	width: 60%;
 	height: 4px;
 	background: #000;
 	z-index: 0;
@@ -602,7 +539,7 @@ a
 	background: #101e34;
 }
 
-.section.type02 .mainHeading:after, .section.type02 .subHeading .icon:before, .section.type02 .subHeading .icon:after
+.section.type02 .mainHeading:after, .section.type02 .subHeading .icon:before, .section.type02 .subHeading .icon:after, .section.type02 .subSection
 {
 	background: #db4a3c;
 }
@@ -610,6 +547,11 @@ a
 .section.type01 .subHeading.alt .icon:before, .section.type01 .subHeading.alt .icon:after, .section.type02 .subHeading.alt .icon:before, .section.type02 .subHeading.alt .icon:after
 {
 	background: #fff;
+}
+
+.section.type01 .subSection
+{
+	background: #0f294c;
 }
 
 .mainHeading[data-scroll = "in"]:after
@@ -674,26 +616,7 @@ a
 	height: 100px;
 	text-align: center;
 	overflow: hidden;
-}
-
-#personalInfo.subHeading
-{
-	top: 350px;
-}
-
-#topSkillsInfo.subHeading
-{
-	top: 300px;
-}
-
-#otherSkillsInfo.subHeading
-{
-	top: 25px;
-}
-
-#knownTechInfo.subHeading, #languageInfoHeader.subHeading, #topSoftSkills.subHeading, #minorSoftSkills.subHeading, #referenceHeader.subHeading
-{
-	top: 50px;
+	transition: 0.5s;
 }
 
 .subHeading .icon
@@ -757,809 +680,790 @@ a
 	opacity: 1;
 }
 
+#personalInfo.subHeading
+{
+	top: 350px;
+}
+
+#languageHeader.subHeading
+{
+	top: 50px;
+}
+
+#topSkillsInfo.subHeading
+{
+	top: 300px;
+}
+
+#minorTechSkillsHeading.subHeading
+{
+	top: 50px;
+}
+
+#topSoftSkillHeader.subHeading
+{
+	top: 50px;
+}
+
+#minorSoftSkillHeader.subHeading
+{
+	top: 50px;
+}
+
 #aboutMe .container
 {
 	position: relative;
-	width: 80%;
-	height: 320px;
-	top: 350px;
-	left: 10%;
+	top: 400px;
+	width: 90%;
+	height: 500px;
+	left: 5%;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: row;
+	flex: 33%;
 	justify-content: center;
 	align-items: center;
-}
-
-#aboutMe .container div
-{
-	flex: 30%;
-}
-
-#aboutMe .container .textSection
-{
-	width: 30%;
-	height: 300px;
-	margin: 5px;
-	opacity: 0;
-	transition: 1s;
-	transition-delay: 1s;
-}
-
-#aboutMe .container .textSection[data-scroll = "in"]
-{
-	opacity: 1;
-}
-
-#aboutMe .container .photoSection
-{
-	width: 200px;
-	height: 200px;
-	background: #db4a3c;
-	margin: 5px auto;
-	border: 4px solid #db4a3c;
-	border-radius: 50%;
-	transform: scale(0.1);
 	transition: 0.5s;
-	transition-delay: 1s;
-	opacity: 0;
 }
 
-#aboutMe .container .photoSection[data-scroll = "in"]
+#languageInfo .container, #mySkills .container
 {
-	background: url("./img/photo2.jpg") no-repeat;
-	background-size: 200px 200px;
-	background-position: 0 0;
-	transform: scale(1);
-	opacity: 1;
-}
-
-.languageInfoContainer
-{
-	background: #db4a3c;
-	width: 100%;
-	height: 600px;
-	position: relative;
-	top: 400px;
-	overflow: hidden;
-}
-
-.languageContainer
-{
-	position: relative;
-	width: 90%;
-	left: 5%;
-	height: 350px;
-	top: 75px;
-}
-
-.topSkillsContainer
-{
-	position: relative;
-	width: 90%;
-	left: 5%;
-	height: 350px;
-	top: 300px;
-	overflow: hidden;
-}
-
-.topSoftSkillsContainer
-{
-	position: relative;
-	width: 100%;
-	height: 800px;
-	overflow: hidden;
-}
-
-.minorSoftSkillContainer
-{
-	position: relative;
-	height: 700px;
-	width: 100%;
-	top: 400px;
-	overflow: hidden;
-}
-
-.minorSoftSkillTable
-{
-	position: relative;
 	top: 100px;
-	left: 20%;
-	width: 60%;
-	height: 480px;
-	margin: 0;
-}
-
-.minorSoftSkillTable .row
-{
-	position: relative;
-	height: 60px;
-	width: 100%;
-	margin: 10px 0;
-	font-family: 'Oswald', sans-serif;
-}
-
-.minorSoftSkillTable .row.alt .minorSoftSkillBox
-{
-	background: none;
-	color: #101e34;
-	transform: translateX(500px);
-	transition: 2s;
-	opacity: 0;
-	border-radius: 30px;
-}
-
-.minorSoftSkillTable .row .minorSoftSkillBox
-{
-	display: inline-block;
 	position: relative;
 	width: 90%;
 	left: 5%;
-	height: 60px;
-	overflow: hidden;
-	background: #101e34;
-	color: #fff;
-	transform: translateX(-500px);
-	transition: 2s;
-	opacity: 0;
-	border-radius: 30px;
-}
-
-.minorSoftSkillTable[data-scroll = "in"] > .row .minorSoftSkillBox, .minorSoftSkillTable[data-scroll = "in"] > .row.alt .minorSoftSkillBox
-{
-	transform: translateX(0);
-	opacity: 1;
-}
-
-.minorSoftSkillBox h3
-{
-	font-size: 25px;
-	text-align: center;
-	line-height: 30px;
-}
-
-.languageItems, .topSkillsItems, .topSoftSkillItems
-{
-	font-family: 'Oswald', sans-serif;
-	position: relative;
-	width: 60%;
-	left: 10%;
-	height: 100%;
-	float: left;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	transform: translateX(300px);
-	opacity: 0;
-	transition: 1s;
-}
-
-.topSoftSkillItems
-{
-	top: 75px;
 	height: 500px;
+	display: flex;
+	flex-direction: row;
+	flex: 50%;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
 }
 
-.languageContainer[data-scroll = "in"] > .languageItems, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems
+#mySkills .container
 {
+	top: 350px;
+}
+
+#topSoftSkillsInfo .container
+{
+	top: 50px;
+}
+
+
+.photoContainer .photoSection
+{
+	position: relative;
+	top: -60px;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 4px solid #db4a3c;
+	margin: 5px auto;
+	transition: 1s;
+	transform: scale(0);
+	opacity: 0;
+	background: url("./img/photo2.jpg") no-repeat;
+	background-size: 300px 300px;
+	background-position: 0 0;
+}
+
+.photoContainer .photoSection[data-scroll = "in"]
+{
+	opacity: 1;
+	transform: scale(1);
+	transition-delay: 1s;
+}
+
+.textSection, .photoContainer
+{
+	position: relative;
+	width: 400px;
+	height: 300px;
+}
+
+.textSection.textFull
+{
+	display:none;
+}
+
+.textLine
+{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin: 5px 0;
+	border-radius: 20px;
+	opacity: 0;
+	transition: 1s;
+}
+
+.textLine.type01[data-scroll = "in"], .textLine.type02[data-scroll = "in"]
+{
+	opacity: 1;
 	transform: translateX(0);
-	opacity: 1;
+	transition-delay: .5s;
 }
 
-
-.languageBox
+.textLine.type01
 {
-	position: relative;
-	width: 100%;
-	height: 200px;
-	margin: 0;
-	border-bottom: 1.5px solid #fff;
-	overflow: hidden;
-}
-
-.skillBarBox
-{
-	position: relative;
-	width: 100%;
-	height: 100px;
-	margin: 0;
-	border-bottom: 1.5px solid #101e34;
-	overflow: hidden;
-}
-
-.topSoftSkillItems .skillBarBox
-{
-	border-color: #fff;
-}
-
-.languageBox h3
-{
-	position: relative;
-	top: 0px;
-	font-size: 30px;
-	font-weight: bold;
-	color: #fff;
-	text-transform: uppercase;
-}
-
-.skillBarBox h3
-{
-	position: relative;
-	top: -15px;
-	font-size: 20px;
-	font-weight: bold;
-	color: #101e34;
-	text-transform: uppercase;
-}
-
-.topSoftSkillItems .skillBarBox h3
-{
-	color: #fff;
-}
-
-.languageBox .languageBar
-{
-	position: relative;
-	top: -10px;
 	background: #db4a3c;
-	border: 3px solid #fff;
-	border-radius: 20px;
-	width: 20px;
-	height: 20px;
-	overflow: hidden;
-	transition: 1s;
-	transition-delay: 1s;
-}
-
-.skillBarBox .skillBar
-{
-	position: relative;
-	top: -30px;
-	background: #dcdcdc;
-	border: 3px solid #101e34;
-	border-radius: 20px;
-	width: 15px;
-	height: 15px;
-	overflow: hidden;
-	transition: 1s;
-	transition-delay: 1s;
-}
-
-.topSoftSkillItems .skillBarBox .skillBar
-{
-	border-color: #fff;
-	background: #0f294c;
-}
-
-.languageContainer[data-scroll = "in"] > .languageItems .languageBox .languageBar, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox .skillBar, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox .skillBar
-{
-	width: 90%;
-}
-
-.languageBox p 
-{
-	position: absolute;
-	right: 10%;
-	top: 110px;
 	color: #fff;
-	width: 50%;
-	height: 30px;
-	text-align: right;
-	text-transform: uppercase;
-	font-size: 20px;
-	opacity: 0;
-	transition: 1s;
-	transition-delay: 2s;
+	transform: translateX(200px);
 }
 
-.skillBarBox p
+.textLine.type02
 {
-	position: absolute;
-	right: 10%;
-	top: 45px;
-	color: #101e34;
-	width: 50%;
-	height: 30px;
-	text-align: right;
-	text-transform: uppercase;
-	font-size: 15px;
-	opacity: 0;
-	transition: 1s;
-	transition-delay: 2s;
-	
-}
-
-.topSoftSkillItems .skillBarBox p
-{
-	color: #fff;
-}
-
-.languageContainer[data-scroll = "in"] > .languageItems .languageBox p, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox p, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox p
-{
-	opacity: 1;
-}
-
-.languageBox .languageBar .languageRating, .skillBarBox .skillBar .skillRating
-{
-	width: 100%;
-	height: 18px;
 	background: #fff;
-	border-radius: 30px;
-	margin: 1px;
-	transform-origin: left;
-	transform: scaleX(0);
-	transition: 1s;
-	transition-delay: 2s;
+	color: #db4a3c;
+	transform: translateX(-200px);
 }
 
-.skillBarBox .skillBar .skillRating
+.section.type01 .subSection .textLine.type01
 {
-	height: 13px;
-	border-radius: 13px;
-	background: #db4a3c;
+	background: #101e34;
+	color:  #fff;
 }
 
-.languageContainer[data-scroll = "in"] > .languageItems .languageBox .languageBar .languageRating.pro, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox .skillBar .skillRating.pro, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox .skillBar .skillRating.pro
+.section.type01 .subSection .textLine.type02
 {
-	transform: scaleX(1);
+	background: #0f294c;
+	color: #fff;
 }
 
-.languageContainer[data-scroll = "in"] > .languageItems .languageBox .languageBar .languageRating.expert, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox .skillBar .skillRating.expert, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox .skillBar .skillRating.expert
+.textLine .left, .textLine .right
 {
-	transform: scaleX(0.75);
+	position: absolute;
+	top: -20px;
+	left: 0%;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	transition: 0.5s;
 }
 
-.languageContainer[data-scroll = "in"] > .languageItems .languageBox .languageBar .languageRating.advanced, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox .skillBar .skillRating.advanced, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox .skillBar .skillRating.advanced
+.textLine .left
 {
-	transform: scaleX(0.5);
+	left: 5%;
+	width: 35%;
+	text-align: left;
 }
 
-.languageContainer[data-scroll = "in"] > .languageItems .languageBox .languageBar .languageRating.beginner, .topSkillsContainer[data-scroll = "in"] > .topSkillsItems .skillBarBox .skillBar .skillRating.beginner, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillItems .skillBarBox .skillBar .skillRating.beginner
+.textLine .right
 {
-	transform: scaleX(0.25);
+	left: 40%;
+	width: 55%;
+	text-align: right;
 }
 
+.techSkillsContainer .textLine
+{
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+}
 
-
-.languageInfo, .topSkillsInfo, .topSoftSkillsInfo
+.skillBarLegend
 {
 	position: relative;
-	width: 250px;
-	height: 100%;
-	float: right;
-	background: #101e34;
-	border-radius: 30px;
-	transition: 1s;
-	transition-delay: 1s;
-	opacity: 0;
-	transform: translateY(-200px);
-}
-
-.topSkillsInfo, .topSoftSkillsInfo
-{
+	width: 300px;
 	height: 350px;
+	background: #101e34;
+	border-radius: 20px;
+	transform: translateY(-400px);
+	opacity: 0;
+	transition: 1s;
+	overflow: hidden;
+	margin: 0 auto;
 }
 
-.topSoftSkillsInfo
-{
-	top: 100px;
-	right: 5%;
-}
-
-.languageContainer[data-scroll = "in"] > .languageInfo, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo
+.skillBarLegend[data-scroll = "in"]
 {
 	opacity: 1;
 	transform: translateY(0);
 }
 
-.languageInfo h2, .topSkillsInfo h2, .topSoftSkillsInfo h2
+.skillBarLegend h2
 {
-	font-family: consolas;
 	position: absolute;
-	left: 0;
-	top: 5px;
-	text-align: center;
+	top: -10px;
 	width: 100%;
-	color: #fff;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
 	font-size: 25px;
+	color: #fff;
 	text-transform: uppercase;
-}
-
-.languageInfo .infoUnderLine, .topSkillsInfo .infoUnderLine, .topSoftSkillsInfo .infoUnderLine
-{
-	position: absolute;
-	top: 65px;
-	width: 70%;
-	margin: 0 auto;
-	background: #fff;
-	left: 15%;
-	height: 3px;
-}
-
-.languageInfo .infoContainer, .topSkillsInfo .infoContainer, .topSoftSkillsInfo .infoContainer
-{
-	position: absolute;
-	width: 90%;
-	left: 5%;
-	top: 80px;
-	height: 250px;
+	transform: translateX(-100px);
 	opacity: 0;
-	transition: 1s;
+	transition: 0.5s;
+}
+
+.skillBarLegend[data-scroll = "in"] > h2, .skillBarLegend[data-scroll = "in"] > .underLine
+{
+	opacity: 1;
+	transform: translateX(0);
 	transition-delay: 1s;
 }
 
-.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer
-{
-	opacity: 1;
-}
-
-.infoContainer .infoBox
-{
-	width: 100%;
-	height: 62.5px;
-	position: relative;
-	overflow: hidden;
-	opacity: 0;
-	transition: 1s;
-	transition-delay: 2s;
-}
-
-.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer .infoBox, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer .infoBox, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer .infoBox
-{
-	opacity: 1;
-}
-
-.infoBox h3
+.skillBarLegend .underLine
 {
 	position: absolute;
-	top: -20px;
-	height: 25px;
+	top: 60px;
+	width: 60%;
+	height: 2px;
+	background: #fff;
+	left: 20%;
+	transform: translateX(200px);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.skillInfoContainer
+{
+	position: relative;
+	top: 70px;
+	width: 90%;
+	left: 5%;
+	height: 250px;
+}
+
+.skillInfoItem
+{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin: 12.5px 0;
+	overflow: hidden;
+}
+
+.skillInfoItem h3
+{
+	position: absolute;
+	top: 0;
+	font-size: 20px;
+	line-height: 20px;
 	width: 80%;
 	left: 10%;
-	line-height: 25px;
-	font-size: 18px;
-	font-weight: bold;
-	text-transform: uppercase;
+	height: 20px;
 	color: #fff;
+	font-weight: bold;
+	margin: 0;
+	opacity: 0;
+	transition: 0.5s;
 }
 
-.infoRatingBar
+.skillBarLegend[data-scroll = "in"] > .skillInfoContainer .skillInfoItem h3
 {
-	position: absolute;
-	width: 90%;
-	height: 10px;
+	opacity: 1;
+	transition-delay: 1s;
+}
+
+.skillInfoBar
+{
+	position: relative;
+	width: 15px;
 	left: 5%;
 	top: 30px;
-	border: 3px solid #fff;
-	border-radius: 10px;
+	height: 15px;
+	background: none;
+	border-radius: 15px;
+	border: 2px solid #fff;
 	overflow: hidden;
+	z-index: 1;
+	transition: 1s;
 }
 
-.infoRatingBar .infoRating
+.skillBarLegend[data-scroll = "in"] > .skillInfoContainer .skillInfoItem .skillInfoBar
 {
-	width: 99%;
-	height: 8px;
-	margin: 1px;
-	transform-origin: left;
-	transform: scaleX(0);
+	width: 90%;
+	transition-delay: 1s;
+}
+
+.skillInfoBarProgress
+{
+	position: absolute;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
 	background: #db4a3c;
+	z-index: -1;
 	transition: 1s;
+}
+
+.skillBarLegend[data-scroll = "in"] > .skillInfoContainer .skillInfoItem .skillInfoBar .skillInfoBarProgress
+{
+	transition-delay: 1s;	
+}
+
+.skillBarLegend[data-scroll = "in"] > .skillInfoContainer .skillInfoItem .skillInfoBar .skillInfoBarProgress.beginner
+{
+	width: 25%;
+}
+
+.skillBarLegend[data-scroll = "in"] > .skillInfoContainer .skillInfoItem .skillInfoBar .skillInfoBarProgress.intermediate
+{
+	width: 50%;
+}
+
+.skillBarLegend[data-scroll = "in"] > .skillInfoContainer .skillInfoItem .skillInfoBar .skillInfoBarProgress.expert
+{
+	width: 75%;
+}
+
+.skillBarLegend[data-scroll = "in"] > .skillInfoContainer .skillInfoItem .skillInfoBar .skillInfoBarProgress.pro
+{
+	width: 100%;
+}
+
+.skillBarContainer
+{
+	position: relative;
+	width: 700px;
+	height: 400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+
+.skillItem
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	border-bottom: 3px solid #fff;
+	transform: translateX(300px);
+	transition: 1s;
+	opacity: 0;
+}
+
+.skillItem[data-scroll = "in"]
+{
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.skillItem h3
+{
+	font-family: 'Oswald', sans-serif;
+	position: absolute; 
+	top: -20px;
+	left: 30px;
+	font-weight: bold;
+	line-height: 30px;
+	font-size: 30px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.skillItem[data-scroll = "in"] > h3
+{
+	opacity: 1;
+	transition-delay: 1s;
+}
+
+.skillBar
+{
+	position: relative;
+	top: 45px;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	background: none;
+	border-radius: 30px;
+	border: 3px solid #fff;
+	overflow: hidden;
+	transition: 1s;
+}
+
+.skillItem[data-scroll = "in"] > .skillBar
+{
+	width: 90%;
+	transition-delay: 1.5s;
+}
+
+.skillBarProgress
+{
+	position: absolute;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 30px;
+	transition: 1s;
+}
+
+.skillItem[data-scroll = "in"] > .skillBar .skillBarProgress.beginner
+{
+	width: 25%;
+	transition-delay: 1.5s;
+}
+
+.skillItem[data-scroll = "in"] > .skillBar .skillBarProgress.intermediate
+{
+	width: 50%;
+	transition-delay: 1.5s;
+}
+
+.skillItem[data-scroll = "in"] > .skillBar .skillBarProgress.expert
+{
+	width: 75%;
+	transition-delay: 1.5s;
+}
+
+.skillItem[data-scroll = "in"] > .skillBar .skillBarProgress.pro
+{
+	width: 100%;
+	transition-delay: 1.5s;
+}
+
+.skillItem p 
+{
+	position: absolute;
+	top: 60px;
+	right: 10%;
+	width: 30%;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: right;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.skillItem[data-scroll = "in"] > p 
+{
+	opacity: 1;
 	transition-delay: 2s;
 }
 
-.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer .infoBox .infoRatingBar .infoRating.pro, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.pro, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.pro
-{
-	transform: scaleX(1);
-}
-
-.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer .infoBox .infoRatingBar .infoRating.beginner, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.beginner, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.beginner
-{
-	transform: scaleX(0.25);
-}
-
-.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer .infoBox .infoRatingBar .infoRating.advanced, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.advanced, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.advanced
-{
-	transform: scaleX(0.5);
-}
-
-.languageContainer[data-scroll = "in"] > .languageInfo .infoContainer .infoBox .infoRatingBar .infoRating.expert, .topSkillsContainer[data-scroll = "in"] > .topSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.expert, .topSoftSkillsContainer[data-scroll = "in"] > .topSoftSkillsInfo .infoContainer .infoBox .infoRatingBar .infoRating.expert
-{
-	transform: scaleX(0.75);
-}
-
-.textSection.textHalf
-{
-	transform: translateY(35%);
-}
-
-.textSection.textFull
-{
-	display: none;
-	transform: translateY(25%);
-}
-
-.textSection .textLine
-{
-	background: #fff;
-	height: 30px;
-	line-height: 30px;
-	border-radius: 10px;
-}
-
-.textLine p
-{
-	margin: 0px;
-	display: inline;
-	font-family: 'Oswald', sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-}
-
-.textLine .left
-{
-	margin-left: 5px;
-	float: left;
-}
-
-.textLine .right
-{
-	margin-right: 5px;
-}
-
-.textLine.type01
+.section.type02 .subSection .container .skillBarContainer .skillItem h3, .section.type01 .subSection .container .skillBarContainer .skillItem h3, .section.type02 .subSection .container .skillBarContainer .skillItem p, .section.type01 .subSection .container .skillBarContainer .skillItem p
 {
 	color: #fff;
+}
+
+.section.type01 .container .skillBarContainer .skillItem h3, .section.type01 .container .skillBarContainer .skillItem p
+{
+	color: #101e34;
+}
+
+.section.type02 .subSection .container .skillBarContainer .skillItem .skillBar, .section.type01 .subSection .container .skillBarContainer .skillItem .skillBar, .section.type01 .subSection .container .skillBarContainer .skillItem
+{
+	border-color: #fff;
+}
+
+.section.type01 .container .skillBarContainer .skillItem .skillBar, .section.type01 .container .skillBarContainer .skillItem
+{
+	border-color: #101e34;
+}
+
+.section.type02 .subSection .container .skillBarContainer .skillItem .skillBarProgress
+{
+	background: #fff;
+}
+
+.section.type01 .container .skillBarContainer .skillItem .skillBarProgress
+{
 	background: #db4a3c;
 }
 
-.textLine.type02
+.minorTechSkillContainer
 {
-	color: #db4a3c;
-	background: #fff;
+	top: 100px;
+	position: relative;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex: 100%;
+	flex-direction: column;
 }
 
-.minorSkillContainer
+.minorTechSkillBtn
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	transition: 1s;
+	background: #101e34;
+	border-bottom: 3px solid #fff;
+}
+
+.minorTechSkillBtn .btnHeading
 {
 	width: 100%;
-	height: 500px;
-	background: #0f294c;
+	height: 100px;
+	position: absolute;
+	transition: .5s;
+	color: #fff;
+}
+
+.btnHeading .icon
+{
 	position: relative;
-	top: 350px;
+	width: 100px;
+	height: 100px;
+	left: 25%;
+	line-height: 100px;
+	font-size: 40px;
+	text-align: center;
+	transition: 1s;
+	margin: 0;
+}
+
+.btnHeading h3
+{
+	position: relative;
+	margin: 0;
+	width: 500px;
+	height: 100px;
+	left: 30%;
+	top: -100px;
+	line-height: 100px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 1s;
+	font-family: 'Oswald', sans-serif;
+}
+
+.minorTechSkillBtn .btnContent
+{
+	position: absolute;
+	width: 60%;
+	left: 20%;
+	top: 150px;
+	height: 200px;
 	transition: 0.5s;
 }
 
-.minorSkillContainer-extended
+.skillTable
 {
+	position: relative;
+	width: 80%;
+	left: 10%;
+	height: 100%;
+	top: 0;
+}
+
+.skillTable .skillRow
+{
+	position: relative;
+	width: 100%;
+	height: 25px;
+	font-size: 20px;
+	line-height: 25px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 25px;
+	opacity: 0;
+	transition: 1s;
+}
+
+.minorSoftSkillItems .skillTable .skillRow
+{
+	height: 50px;
+	font-size: 25px;
+	line-height: 50px;
+	margin: 5px 0;
+	text-transform: none;
+	font-family: 'Oswald', sans-serif;
+}
+
+.skillRow.type01
+{
+	background: #db4a3c;
+	color: #fff;
+	transform: translateX(400px);
+}
+
+.minorSoftSkillItems .skillTable .skillRow.type01
+{
+	background: #101e34;
+	color: #dcdcdc;
+}
+
+.skillRow.type02
+{
+	background: #fff;
+	color: #db4a3c;
+	transform: translateX(-400px);
+}
+
+.minorSoftSkillItems .skillTable .skillRow.type02
+{
+	background: #dcdcdc;
+	color: #101e34;
+}
+
+.minorTechSkillBtn:hover
+{
+	height: 400px;
+	background: #fff;
+}
+
+.minorTechSkillBtn:hover > .btnHeading
+{
+	height: 150px;
+	color: #db4a3c;
+}
+
+.minorTechSkillBtn:hover > .btnHeading .icon 
+{
+	width: 100%;
+	left: 0;
+	height: 100px;
+	font-size: 80px;
+}
+
+.minorTechSkillBtn:hover > .btnHeading h3
+{
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 50px;
+	font-size: 25px;
+	line-height: 50px;
+}
+
+.minorTechSkillBtn:hover > .btnContent .skillTable .skillRow
+{
+	transition-delay: 1s;
+	transition: 1s;
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.minorSoftSkillItems .skillTable .skillRow[data-scroll = "in"]
+{
+	transition-delay: 1s;
+	transition: 1s;
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.knownTechContainer
+{
+	position: relative;
 	width: 100%;
 	height: 800px;
-	background: #0f294c;
-	position: relative;
-	top: 350px;
-	transition: 0.5s;
-}
-
-
-.minorSkillContainer .container, .minorSkillContainer-extended .container
-{
-	position: absolute;
-	top: 200px;
-	left: 0;
-	height: 600px;
-	width: 100%;
-	margin: 0px auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-content: center;
-}
-
-.container .skillBox
-{
-	position: relative;
-	height: 50px;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background: #101e34;
-	border-bottom: 1px solid #fff;
-	border-top: 1px solid #fff;
-	transition: 0.5s;
-	text-decoration: none;
-	overflow: hidden;
-}
-
-.container .skillBox:hover
-{
-	height: 375px;
-	background: #fff;
-}
-
-.container .skillBox .icon
-{
-	position: absolute;
-	text-align: center;
-	height: 50px;
-	top: 0px;
-	left: -15%;
-	width: 100%;
-	line-height: 50px;
-	font-size: 25px;
-	transition: 0.5s;
-	color: #fff;
-}
-
-.container .skillBox:hover > .icon
-{
-	top: 10px;
-	left: 0;
-	font-size: 100px;
-	color: #db4a3c;
-}
-
-.container .skillBox .heading
-{
-	position: absolute;
-	height: 25px;
-	top: 0px;
-	left: 0%;
-	width: 100%;
-	text-align: center;
-	line-height: 50px;
-	font-size: 15px;
-	transition: 0.5s;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
-	color: #fff;
-}
-
-.container .skillBox .heading h2
-{
-	margin: 0 auto;
-}
-
-.container .skillBox:hover > .heading
-{
-	top: 110px;
-	font-size: 25px;
-	color: #db4a3c;
-}
-
-.container .skillBox .skillList
-{
-	position: relative;
-	top: 250px;
-	width: 300px;
-	height: 80px;
-	opacity: 0;
-	transition: 0.5s;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-.container .skillBox:hover .skillList
-{
-	top: 175px;
-	height: 200px;
-	opacity: 1;
-	transition: 1s;
-}
-
-.skillName
-{
-	position: relative;
-	width: 100%;
-	height: 25px;
-	line-height: 25px;
-	font-size: 20px;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	font-family: consolas;
-	font-weight: bold;
-	transition: 0.25s;
-	opacity: 0;
-}
-
-.skillName.type01
-{
-	background: #db4a3c;
-	border-radius: 12.5px;
-	color: #fff;
-}
-
-.skillName.type02
-{
-	background: #fff;
-	color: #db4a3c;
-}
-
-.skillBox:hover > .skillList .skillName
-{
-	opacity: 1;
-	transition: 1s;
+	top: 450px;
 }
 
 .knownTechContainer .knownTechItems
 {
-	position: absolute;
-	top: 200px;
-	width: 100%;
-	height: 200px;
+	position: relative;
+	width: 90%;
+	left: 5%;
+	top: 50px;
+	height: 500px;
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
+	align-items: center;
 	justify-content: center;
 }
 
-.knownTechItems .knownTechBtns
+.knownTechBtn
 {
 	position: relative;
-	width: 100px;
-	height: 100px;
-	margin: 20px 50px;
+	width: 150px;
+	height: 150px;
+	margin: 0 20px;
 	overflow: hidden;
-	transition: 0.5s;
-	border: 3px solid #fff;
-	background: #fff;
-	border-radius: 100px;
+	border-radius: 50%;
 	transform: scale(1);
+	transition: .5s;
 }
 
-.knownTechItems .knownTechBtns:hover
+.knownTechBtn:hover
 {
-	border: 3px solid #fff;
-	background: #fff;
-	transform: scale(2);
-	margin: 50px 75px;
+	transform: scale(1.25);
 }
 
-.knownTechBtns img 
+.knownTechBtn img 
 {
+	position: absolute;
 	width: 100px;
 	height: 100px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-radius: 50%;
-	transition: 0.5s;
-	transform: scale(1) translateY(0);
+	left: 25px;
+	top: 25px;
+	transition: .5s;
 }
 
-.knownTechBtns h3
+.knownTechBtn:hover > img 
+{
+	width: 50px;
+	height: 50px;
+	left: 50px;
+	top: 15px;
+}
+
+.knownTechBtn h3 
 {
 	position: absolute;
-	top: 40px;
-	font-size: 10px;
+	top: 55px;
 	width: 100%;
+	height: 30px;
+	font-size: 15px;
 	text-align: center;
+	text-transform: uppercase;
+	color: #000;
 	opacity: 0;
 	transition: .25s;
-	color: #101e34;
-	text-transform: uppercase;
 }
 
-.knownTechBtns h3 span
-{
-	color: #101e34;
-	font-size: 6px;
-}
-
-.knownTechBtns h3 span.level
-{
-	color: #db4a3c;
-	font-size: 15px;
-	font-family: 'Oswald', sans-serif;
-}
-
-.knownTechItems .knownTechBtns:hover > img
-{
-	border-color: #fff;
-	transform: scale(.5) translateY(-50px);
-}
-
-.knownTechItems .knownTechBtns:hover > h3
+.knownTechBtn:hover > h3
 {
 	opacity: 1;
 	transition: 1s;
+}
+
+.knownTechBtn h3 span
+{
+	font-size: 12px;
+}
+
+.knownTechBtn h3 span.level
+{
+	font-family: 'Oswald', sans-serif;
+	color: #db4a3c;
+	font-size: 18px;
+}
+
+.minorSoftSkillContainer
+{
+	position: relative;
+	top: 350px;
+	width: 100%;
+	height: 600px;
+}
+
+.minorSoftSkillItems
+{
+	position: relative;
+	top: 100px;
+	width: 100%;
+	height: 500px;
+}
+
+.timelineContainer
+{
+	position: relative;
+	width: 100%;
+	height: 3400px;
+	top: 300px;
+	overflow: hidden;
 }
 
 .timelineContainer .timeLineStart, .timelineContainer .timeLineEnd
@@ -1576,14 +1480,10 @@ a
 	transition: 1s;
 }
 
-.timelineContainer .timeLineEnd
-{
-	transition-delay: 2s;
-}
-
 .timelineContainer[data-scroll = "in"] > .timeLineMainLine
 {
 	transform: scaleY(1);
+	transition-delay: 1s;
 }
 
 .timelineContainer[data-scroll = "in"] > .timeLineStart
@@ -1595,6 +1495,7 @@ a
 .timelineContainer[data-scroll = "in"] > .timeLineEnd
 {
 	color: #fff;
+	transition-delay: 2s;
 }
 
 .timeLineMainLine
@@ -1604,7 +1505,6 @@ a
 	position: relative;
 	transform: scaleY(0);
 	transition: 1s;
-	transition-delay: 1s;
 	transform-origin: top;
 }
 
@@ -1796,12 +1696,23 @@ a
 	top: 10px;
 }
 
+
+
+.contactMeContainer
+{
+	position: relative;
+	top: 275px;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+
 .contactMeInfo
 {
 	position: absolute;
 	top: 30px;
-	width: 40%;
-	left: 30%;
+	width: 60%;
+	left: 20%;
 	height: 275px;
 	transition: 0.5s;
 }
@@ -2011,25 +1922,24 @@ a
 	font-size: 15px;
 	opacity: 0;
 	transition: 1s;
-	transition-delay: 1s;
 }
 
 .reference[data-scroll = "in"] > h3, .reference[data-scroll = "in"] > .referenceContacts
 {
 	opacity: 1;
+	transition-delay: 1s;
 }
 
 .reference .referenceContacts
 {
 	width: 80%;
 	position: relative;
-	left: 15%;
+	left: 10%;
 	top: -20px;
 	height: 100px;
 	color: #101e34;
 	opacity: 0;
 	transition: 1s;
-	transition-delay: 1s;
 }
 
 
@@ -2066,67 +1976,34 @@ a
 	font-weight: bold;
 }
 
-@media only screen and (max-width: 1300px)
+@media only screen and (max-width: 1200px)
 {
-	.knownTechContainer
+	.btnNavBar
 	{
-		height: 800px;
+		width: 150px;
 	}
 	
-	.contactMeInfo
+	.btnNavBar h3
 	{
-		width: 50%;
-		left: 25%;
+		width: 90px;
+		font-size: 18px;
 	}
 	
-	.contactInfoItem p 
+	.textLine .left, .textLine .right
 	{
-		font-size: 20px;
-	}
-	
-	.contactInfoItem .icon
-	{
-		font-size: 25px;
-	}
-}
-@media only screen and (max-width: 1000px)
-{
-	.header
-	{
-		background-position: -300px 0;
-	}
-	
-	.container
-	{
-		left: 25%;
-		width: 70%;
-	}
-	
-	.btnNavBar .btnContainer .label
-	{
+		width: 30%;
 		font-size: 15px;
 	}
 	
-	#mySkills.section
+	.textLine .right
 	{
-		height: 4000px;
+		left: 35%;
+		width: 60%
 	}
 	
-	.textLine p
+	.skillBarContainer
 	{
-		font-size: 12px;
-	}
-	
-	.languageItems, .topSkillsItems
-	{
-		width: 60%;
-		left: 0;
-	}
-	
-	.topSoftSkillItems
-	{
-		width: 50%;
-		left: 5%;
+		width: 600px;
 	}
 	
 	.knownTechContainer
@@ -2134,44 +2011,17 @@ a
 		height: 900px;
 	}
 	
-	.minorSoftSkillBox h3 
+	.knownTechContainer .knownTechItems
 	{
-		font-size: 20px;
-	}
-	
-	.timeLineInfo p
-	{
-		font-size: 13px;
-	}
-	
-	.contactMeInfo
-	{
-		width: 60%;
-		left: 20%;
+		height: 600px
 	}
 }
 
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 1000px)
 {
-	.header
+	.textSection.textHalf
 	{
-		background-position: -450px 0;
-	}
-	
-	.header-minimized
-	{
-		background-position: 200px 0;
-	}
-	
-	.container
-	{
-		left: 35%;
-		width: 60%;
-	}
-	
-	.btnNavBar
-	{
-		width: 50px;
+		display: none;
 	}
 	
 	.textSection.textFull
@@ -2179,93 +2029,382 @@ a
 		display: block;
 	}
 	
-	.textSection.textHalf
+	.photoContainer .photoSection
 	{
-		display: none;
+		top: 0;
 	}
 	
-	.minorSoftSkillTable
+	.skillBarContainer
+	{
+		width: 500px;
+	}
+}
+
+@media only screen and (max-width: 900px)
+{
+	.header
+	{
+		background-position: -400px 0;
+	}
+	
+	.header-minimized
+	{
+		background-position: 200px 0;
+	}
+	.btnNavBar
+	{
+		width: 120px;
+	}
+	
+	.btnNavBar h3
+	{
+		width: 60px;
+		font-size: 12px;
+	}
+	
+	.skillBarContainer
+	{
+		width: 400px;
+	}
+	
+	.skillItem p 
+	{
+		width: 40%;
+	}
+	
+	#mySkills.section
+	{
+		height: 4450px;
+	}
+	
+	.knownTechContainer .knownTechItems
+	{
+		height: 700px
+	}
+	
+	.knownTechContainer
+	{
+		height: 1000px;
+	}
+
+	.timeLineInfo h2 
+	{
+		font-size: 20px;
+	}
+
+	.timeLineInfo h3
+	{
+		font-size: 18px;
+	}
+
+	.timeLineInfo p 
+	{
+		font-size: 12px;
+	}
+	
+	.contactMeInfo
+	{
+		width: 90%;
+		left: 5%;
+	}
+}
+
+@media only screen and (max-width: 800px)
+{
+	.header
+	{
+		background-position: -500px 0;
+	}
+	.btnNavBar
+	{
+		width: 50px;
+	}
+	
+	#mySkills.section
+	{
+		height: 4850px;
+	}
+	
+	.skillBarContainer
+	{
+		width: 300px;
+	}
+	
+	.skillItem p 
+	{
+		width: 50%;
+	}
+	
+	.skillBarLegend
+	{
+		width: 250px;
+	}
+	
+	.btnHeading .icon
+	{
+		left: 20%;
+	}
+	
+	.btnHeading h3
+	{
+		left: 25%;
+	}
+	
+	.minorTechSkillBtn .btnContent
 	{
 		width: 80%;
 		left: 10%;
 	}
 	
-	.timeLineInfo h2
+	.knownTechContainer .knownTechItems
 	{
-		font-size: 20px;
+		height: 1200px
+	}
+	
+	.knownTechContainer
+	{
+		height: 1400px;
 	}
 }
 
 @media only screen and (max-width: 700px)
 {
-	.minorSkillContainer
+	.textLine .left, .textLine .right
 	{
-		top: 600px;
+		font-size: 12px;
 	}
 	
-	.container .skillBox .icon
+	.photoContainer .photoSection
 	{
-		left: -30%;
+		top: 20px;
+		width: 250px;
+		height: 250px;
+		background-size: 250px 250px;
+	}
+}
+
+@media only screen and (max-width: 600px)
+{
+	#aboutMe.section
+	{
+		height: 2650px;
 	}
 	
-	.languageItems
+	#mySkills.section
 	{
-		width: 50%;
+		height: 5700px;
+	}
+
+	#topSoftSkillsInfo.subSection
+	{
+		top: 400px;
+		height: 1100px;
 	}
 	
-	.languageBox p 
+	#aboutMe .container, #mySkills .container
 	{
-		font-size: 15px;
+		top: 450px;
+		flex: 100%;
+		flex-direction: column;
 	}
 	
-	.section#mySkills
+	#mySkills .container
 	{
-		height: 4200px;
+		top: 350px;
+		height: 1000px;
 	}
 	
-	.knownTechContainer
+	#topSoftSkillsInfo .container
 	{
-		top: 600px;
-		height: 1200px;
+		top: 50px;
 	}
 	
-	.topSoftSkillItems
+	.textSection.textFull
 	{
-		width: 45%;
+		display: block;
+		top: 50px;
+	}
+	
+	.textSection, .photoContainer
+	{
+		width: 100%;
+	}
+	
+	.textLine .left, .textLine .right
+	{
+		font-size: 18px;
 		left: 5%;
+		width: 35%;
+	}
+
+	.textLine .right
+	{
+		left: 40%;
+		width: 55%;
+		text-align: right;
 	}
 	
-	.minorSoftSkillTable
+	#languageInfo.subSection
+	{
+		top: 650px;
+		height: 1000px;
+	}
+	
+	#languageInfo .container
+	{
+		top: 100px;
+		height: 800px;
+	}
+	
+	.skillBarLegend
+	{
+		width: 100%;
+		height: 350px;
+	}
+	
+	.skillBarContainer
+	{
+		width: 100%;
+		height: 350px;
+	}
+	
+	#mySkills .container .skillBarContainer
+	{
+		height: 500px;
+	}
+	
+	.btnHeading .icon
+	{
+		left: 10%;
+	}
+	
+	.btnHeading h3
+	{
+		left: 10%;
+		font-size: 20px;
+	}
+	
+	.minorSoftSkillContainer
+	{
+		top: 400px;
+	}
+	.minorSoftSkillItems .skillTable .skillRow
+	{
+		font-size: 20px;
+	}
+	
+	.contactInfoItem .icon, .contactInfoItem p 
+	{
+		font-size: 18px;
+	}
+	
+	.refItems
+	{
+		flex-direction: column;
+	}
+	
+	#contactMe.section
+	{
+		height: 1650px;
+	}
+}
+
+@media only screen and (max-width: 500px)
+{
+	.header
+	{
+		background-position: -600px 0;
+	}
+	
+	.header-minimized
+	{
+		background-position: 100px 0;
+	}
+	
+	.branding h1
+	{
+		font-size: 25px;
+	}
+	
+	.branding h1 span
+	{
+		font-size: 21px;
+	}
+	
+	.btnNavBar
+	{
+		display: none;
+	}
+	
+	.menuBtn
+	{
+		display: inline-block;
+	}
+	
+	#home.section
+	{
+		height: 850px;
+	}
+
+	#eduXP.section
+	{
+		height: 3600px;
+	}
+	
+	.mainHeading:after
 	{
 		width: 80%;
 		left: 10%;
 	}
 	
-	.contactMeInfo
+
+	#personalInfo.subHeading
 	{
-		width: 70%;
-		left: 15%;
+		top: 400px;
 	}
 	
-	.reference 
+	#aboutMe .container
 	{
-		width: 80%;
+		top: 500px;
 	}
 	
-	.refItems
+	#languageInfo .container
 	{
-		flex: 100%;
-		flex-direction: column;
-		top: 100px;
+		top: 50px;
+	}
+
+	.timeLineMainLine
+	{
+		height: 2800px;
+	}
+
+	#work03.timeLineItem
+	{
+		top: 2000px;
+	}
+
+	#work04.timeLineItem
+	{
+		top: 2400px;
+	}
+
+	.timeStamp.edu
+	{
+		left: 60%;
+	}
+
+	.timeStamp.exp
+	{
+		right: 60%;
 	}
 	
-	#contactMe.section
+	.reference
 	{
-		height: 1700px;
+		width: 100%;
 	}
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 400px)
 {
 	.header
 	{
@@ -2277,350 +2416,89 @@ a
 		background-position: 0 0;
 	}
 	
-	.navbar .container 
+	#home.section
 	{
-		display: none;
-	}
-
-	.menuBtn, .header-minimized .navbar .menuBtn
-	{
-		display: inline-block;
+		height: 900px;
 	}
 	
-	#aboutMe .container div
+	#mySkills.section
 	{
-		flex: 100%;
-	}
-
-	#aboutMe .container .photoContainer
-	{
-		height: 175px;
-	}
-	
-	.pageDivider[data-scroll = "in"] > .icon:after
-	{
-		transform: scaleX(.75);
-	}
-
-	.section.aboutMe
-	{
-		height: 2400px;
-	}
-	
-	.section#mySkills
-	{
-		height: 5500px;
-	}
-	
-	.languageInfoContainer
-	{
-		top: 550px;
-		height: 1100px;
-	}
-	
-	.topSkillsContainer
-	{
-		top: 350px;
-		height: 1100px;
-	}
-	
-	.topSoftSkillsContainer
-	{
-		height: 1200px;
-	}
-	
-	.languageInfo, .topSkillsInfo
-	{
-		float: none;
-		margin: 0 auto;
-	}
-	
-	.topSoftSkillsInfo
-	{
-		float: none;
-		margin: 0 auto;
-		right: unset;
-	}
-	
-	.languageItems, .topSkillsItems
-	{
-		float: none;
-		margin: 0 auto;
-		width: 80%;
-		left: 10%;
-	}
-	
-	.topSoftSkillItems
-	{
-		top: 150px;
-		float: none;
-		margin: 0 auto;
-		left: 0%;
-		width: 80%;
-	}
-	
-	.topSkillsItems
-	{
-		top: -300px;
-	}
-	
-	.minorSkillContainer
-	{
-		top: 100px;
-	}
-	
-	.knownTechContainer
-	{
-		top: 350px;
-		height: 1200px;
-	}
-	
-	.minorSoftSkillBox h3 
-	{
-		font-size: 18px;
-	}
-	
-	.mainHeading h2
-	{
-		font-size: 35px;
-	}
-	
-	.timeLineInfo p
-	{
-		font-size: 12px;
-	}
-	
-	.contactMeInfo
-	{
-		width: 80%;
-		left: 10%;
-	}
-	
-	.contactInfoItem p 
-	{
-		font-size: 15px;
-	}
-	
-	.contactInfoItem .icon
-	{
-		font-size: 20px;
-	}
-}
-@media only screen and (max-width: 500px)
-{
-	.section.home
-	{
-		height: 800px;
-	}
-	
-	#personalInfo.subHeading
-	{
-		top: 400px;
-	}
-	
-	#aboutMe .container
-	{
-		top: 450px;
-		height: 420px;
-	}
-	
-	.knownTechContainer
-	{
-		height: 1300px;
-	}
-	
-	.minorSoftSkillTable
-	{
-		width: 90%;
-		left: 5%;
-	}
-	
-	.minorSoftSkillBox h3 
-	{
-		font-size: 15px;
-	}
-	
-	#work01.timeLineItem, #work02.timeLineItem, #work03.timeLineItem, #work04.timeLineItem
-	{
-		height: 400px;
-	}
-	
-	.socialMediaItems
-	{
-		flex: 100%;
-		flex-direction: column;
-	}
-	
-	.socialMediaContainer
-	{
-		height: 600px;
-	}
-	
-	#contactMe.section
-	{
-		height: 2000px;
-	}
-	
-	#work03.timeLineItem
-	{
-		top: 2000px;
-	}
-	
-	#work04.timeLineItem
-	{
-		top: 2400px;
-	}
-	
-	.timeLineMainLine
-	{
-		height: 2800px;
-	}
-	
-	#eduXP.section
-	{
-		height: 3600px;
-	}
-}
-@media only screen and (max-width: 400px)
-{
-	.section.home
-	{
-		height: 850px;
-	}
-	
-	.section.aboutMe
-	{
-		height: 2600px;
-	}
-	
-	.branding h1, .header-minimized .branding h1
-	{
-		margin-left: -10px;
-		font-size: 20px;
-	}
-	
-	.branding h1 span, .header-minimized .branding h1 span
-	{
-		margin-right: 1px;
-		font-size: 15px;
+		height: 6900px;
 	}
 	
 	#personalInfo.subHeading
 	{
 		top: 500px;
 	}
-	
-	#aboutMe .container
-	{
-		top: 550px;
-		height: 500px;
-	}
-	
-	.section#mySkills
-	{
-		height: 6300px;
-	}
-	
-	.knownTechContainer
-	{
-		height: 2100px;
-	}
-	
-	.mainHeading h2
-	{
-		font-size: 30px;
-	}
-	
-	.contactMeInfo
-	{
-		width: 90%;
-		left: 5%;
-	}
-	
-	.refContactRow p
-	{
-		font-size: 12px;
-	}
-}
 
-@media only screen and (max-width: 360px)
-{
-	.section.home
+	#eduXP.section
 	{
-		height: 900px;
+		height: 4000px;
 	}
 	
-	.branding h1, .header-minimized .branding h1
-	{
-		margin-left: -10px;
-		font-size: 20px;
-	}
-	
-	.branding h1 span, .header-minimized .branding h1 span
-	{
-		margin-right: 1px;
-		font-size: 15px;
-	}
-	
-	.branding p, .header-minimized .branding p
-	{
-		margin-left: -10px;
-		font-size: 13px;
-	}
-	
-	.container .skillBox .icon
-	{
-		left: -35%;
-	}
-	.languageBox p 
-	{
-		font-size: 12px;
-	}
-	
-	.minorSoftSkillBox h3 
-	{
-		font-size: 13px;
-	}
-	
-	.contactInfoItem p 
-	{
-		font-size: 12px;
-	}
-	
-	.contactInfoItem .icon
+	.textLine .left, .textLine .right
 	{
 		font-size: 15px;
-	}
-	
-	#personalInfo.subHeading
-	{
-		top: 550px;
 	}
 	
 	#aboutMe .container
 	{
 		top: 600px;
-		height: 600px;
 	}
 	
+	#languageInfo.subSection
+	{
+		top: 800px;
+	}
+	
+	#languageInfo .container
+	{
+		top: 50px;
+	}
+	
+	.btnHeading .icon
+	{
+		left: 5%;
+	}
+	
+	.btnHeading h3
+	{
+		left: -10%;
+	}
+	
+	.minorTechSkillBtn .btnContent
+	{
+		width: 90%;
+		left: 5%;
+	}
+	
+	.knownTechContainer .knownTechItems
+	{
+		height: 2200px
+	}
+	
+	.knownTechContainer
+	{
+		height: 2600px;
+	}
+
+	.timeLineMainLine
+	{
+		height: 3200px;
+	}
 	
 	#work03.timeLineItem
 	{
 		top: 2100px;
 	}
-	
+
 	#work04.timeLineItem
 	{
 		top: 2600px;
 	}
 	
-	.timeLineMainLine
+	.contactInfoItem .icon, .contactInfoItem p 
 	{
-		height: 3100px;
-	}
-	
-	#eduXP.section
-	{
-		height: 3900px;
+		font-size: 15px;
 	}
 }
