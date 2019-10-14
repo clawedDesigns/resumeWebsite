@@ -14,7 +14,7 @@ body
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 250px;
+	height: 200px;
 	background: url("./img/BG.png") no-repeat;
 	background-size: 2000px 200px;
 	background-position: -200px 0;
@@ -90,7 +90,7 @@ body
 	width: 180px;
 	height: 180px;
 	background: #fff;
-	top: 120px;
+	top: 70px;
 	left: 20px;
 	z-index: 3;
 	transition: 0.5s;
@@ -111,7 +111,7 @@ body
 	padding: 0;
 	width: 170px;
 	height: 170px;
-	top: 120px;
+	top: 70px;
 	transition: 0.5s;
 }
 
@@ -130,7 +130,7 @@ body
 	width: 100%;
 	height: 80px;
 	background: #101e34;
-	top: 170px;
+	top: 120px;
 	z-index: 2;
 	border-bottom: 5px solid #fff;
 	transition: 0.5s;
@@ -148,7 +148,7 @@ body
 	padding: 0;
 	width: 75%;
 	height: 60px;
-	top: 180px;
+	top: 130px;
 	left: 20%;
 	transition: 0.5s;
 	text-align: right;
@@ -166,7 +166,7 @@ body
 	padding: 0;
 	width: 50px;
 	height: 50px;
-	top: 185px;
+	top: 135px;
 	right: 20px;
 	background: none;
 	line-height: 50px;
@@ -2219,6 +2219,11 @@ a
 		top: 50px;
 	}
 	
+	.mainHeading h2
+	{
+		font-size: 40px;
+	}
+	
 	.textSection.textFull
 	{
 		display: block;
@@ -2409,6 +2414,12 @@ a
 	.header
 	{
 		background-position: -700px 0;
+	}
+	
+	
+	.mainHeading h2
+	{
+		font-size: 30px;
 	}
 	
 	.header-minimized
